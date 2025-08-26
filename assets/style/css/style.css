@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Lato-regular";
+  src: url("../../fonts/Lato/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: "Cardo-regular";
+  src: url("../../fonts/Cardo/Cardo-Regular.ttf");
+}
+@font-face {
+  font-family: "Cinzel-regular";
+  src: url("../../fonts/Cinzel_Decorative/CinzelDecorative-Regular.ttf");
+}
+body {
+  font-family: "Lato-regular";
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Cinzel-regular";
+}

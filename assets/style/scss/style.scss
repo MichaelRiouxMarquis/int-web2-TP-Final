@@ -21,4 +21,10 @@ h3 {
     font-family: "Cinzel-regular";
 }
 
-
+.mainLogo{
+    &__title{
+        &--cardoFont{
+            font-family: "Cardo-regular";
+        }
+    }
+}

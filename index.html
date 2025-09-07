@@ -18,7 +18,7 @@
   <link rel="manifest" href="manifest.json" />
 </head>
 
-<body class="bg-[url('../assets/images/background.png')] bg-cover bg-center text-gray-900">
+<body class="bg-[url('../assets/images/background.png')] bg-cover bg-center h-auto text-gray-900">
   <a href="#main" class="sr-only">Aller au contenu principal</a>
 
   <header class="sticky top-0 z-50">
@@ -131,22 +131,139 @@
         <img src="/assets/images/index/cards.png" alt="Poker cards"
           class="w-3/4 md:w-2/3 xl:w-[85%] h-auto object-contain drop-shadow-2xl" />
       </div>
+
+
     </section>
+
+    <div class="h-[2px] w-[90%] bg-gradient-to-r from-white/0 via-white/50 to-white/0 my-8 mx-auto"></div>
+
+    <section class="grid grid-cols-12 gap-6 w-[95%] md:w-[90%] max-w-6xl m-auto py-12 px-4 text-white">
+
+      <div class="col-start-1 col-span-12 flex flex-col items-center space-y-4 mb-8">
+        <div class="flex items-center justify-center gap-3">
+          <img src="/assets/images/logo/spade.png" alt="Spade" class="w-8 h-8 md:w-10 md:h-10" />
+          <h2 class="text-3xl xl:text-4xl text-black drop-shadow-[0_0_3px_white] font-bold whitespace-nowrap">
+            Légendes du Poker
+          </h2>
+          <img src="/assets/images/logo/club.png" alt="Club" class="w-8 h-8 md:w-10 md:h-10" />
+        </div>
+        <p class="text-gray-200 max-w-2xl text-center">
+          Découvrez certains des joueurs les plus célèbres et influents dans l’histoire du poker.
+        </p>
+      </div>
+
+      <!-- Card 1 -->
+      <div
+        class="col-span-12 md:col-span-6 xl:col-span-4 bg-black rounded-2xl p-4 flex flex-col items-center shadow-lg hover:scale-105 transition-transform">
+        <img src="/assets/images/index/Phil_Hellmuth.png" alt="Player 1"
+          class="w-32 h-32 rounded-full object-cover border-4 border-red-600 mb-4 shadow-md">
+        <div class="inline-flex items-center justify-center gap-2 mb-1 w-fit">
+          <img src="/assets/images/logo/heart.png" alt="Heart" class="w-6 h-6 md:w-7 md:h-7" />
+          <h3 class="text-xl font-semibold text-white whitespace-nowrap">Phil Hellmuth</h3>
+          <img src="/assets/images/logo/diamond.png" alt="Diamond" class="w-6 h-6 md:w-7 md:h-7" />
+        </div>
+        <p class="text-gray-300 text-center mb-5">Phil Hellmuth est reconnu comme l'un des plus grands joueurs de poker
+          de tous les temps, avec un record de 17 bracelets WSOP. Il est également l'auteur de plusieurs livres, dont
+          Poker Brat, et a joué un rôle clé dans la popularisation du poker à la télévision.</p>
+        <div class="flex space-x-2"><span class="text-red-600 font-bold mr-1">Bracelets des WSOP : </span> 17</div>
+        <div class="flex space-x-2"><span class="text-red-600 font-bold mr-1">Gain en carrière : </span> $23M</div>
+      </div>
+
+      <!-- Card 2 -->
+      <div
+        class="col-span-12 md:col-span-6 xl:col-span-4 bg-black rounded-2xl p-4 flex flex-col items-center shadow-lg hover:scale-105 transition-transform">
+        <img src="/assets/images/index/Daniel_Negreanu.png" alt="Player 2"
+          class="w-32 h-32 rounded-full object-cover border-4 border-red-600 mb-4 shadow-md">
+        <div class="inline-flex items-center justify-center gap-2 mb-1 w-fit">
+          <img src="/assets/images/logo/heart.png" alt="Heart" class="w-6 h-6 md:w-7 md:h-7" />
+          <h3 class="text-xl font-semibold text-white whitespace-nowrap">Daniel Negreanu</h3>
+          <img src="/assets/images/logo/diamond.png" alt="Diamond" class="w-6 h-6 md:w-7 md:h-7" />
+        </div>
+        <p class="text-gray-300 text-center mb-5">Daniel Negreanu est un joueur de poker canadien reconnu pour sa
+          capacité à lire les adversaires et son style de jeu agressif. Il a remporté six bracelets WSOP et est le seul
+          joueur à avoir été élu Joueur de l'année WSOP à deux reprises.</p>
+        <div class="flex space-x-2"><span class="text-red-600 font-bold mr-1">Bracelets des WSOP : </span> 6</div>
+        <div class="flex space-x-2"><span class="text-red-600 font-bold mr-1">Gain en carrière : </span> $42M</div>
+      </div>
+
+      <!-- Card 3 -->
+      <div
+        class="col-span-12 md:col-span-6 xl:col-span-4 bg-black rounded-2xl p-4 flex flex-col items-center shadow-lg hover:scale-105 transition-transform">
+        <img src="/assets/images/index/Phil_Ivey.png" alt="Player 3"
+          class="w-32 h-32 rounded-full object-cover border-4 border-red-600 mb-4 shadow-md">
+        <div class="inline-flex items-center justify-center gap-2 mb-1 w-fit">
+          <img src="/assets/images/logo/heart.png" alt="Heart" class="w-6 h-6 md:w-7 md:h-7" />
+          <h3 class="text-xl font-semibold text-white whitespace-nowrap">Phil Ivey</h3>
+          <img src="/assets/images/logo/diamond.png" alt="Diamond" class="w-6 h-6 md:w-7 md:h-7" />
+        </div>
+        <p class="text-gray-300 text-center mb-5">Phil Ivey est considéré comme l'un des meilleurs joueurs de poker au
+          monde, avec 10 bracelets WSOP et une victoire au World Poker Tour. Il est réputé pour sa polyvalence et sa
+          capacité à exceller dans tous les formats de poker.</p>
+        <div class="flex space-x-2"><span class="text-red-600 font-bold mr-1">Bracelets des WSOP : </span> 10</div>
+        <div class="flex space-x-2"><span class="text-red-600 font-bold mr-1">Gain en carrière : </span> $37M</div>
+      </div>
+
+      <!-- Card 4 -->
+      <div
+        class="col-span-12 md:col-span-6 xl:col-span-4 bg-black rounded-2xl p-4 flex flex-col items-center shadow-lg hover:scale-105 transition-transform">
+        <img src="/assets/images/index/Doyle_Brunson.png" alt="Player 4"
+          class="w-32 h-32 rounded-full object-cover border-4 border-red-600 mb-4 shadow-md">
+        <div class="inline-flex items-center justify-center gap-2 mb-1 w-fit">
+          <img src="/assets/images/logo/heart.png" alt="Heart" class="w-6 h-6 md:w-7 md:h-7" />
+          <h3 class="text-xl font-semibold text-white whitespace-nowrap">Doyle Brunson</h3>
+          <img src="/assets/images/logo/diamond.png" alt="Diamond" class="w-6 h-6 md:w-7 md:h-7" />
+        </div>
+        <p class="text-gray-300 text-center mb-5">Doyle Brunson est une légende du poker, avec 10 bracelets WSOP et deux
+          victoires au Main Event. Il est l'auteur de Super/System, un livre fondamental pour les joueurs de poker, et a
+          joué un rôle majeur dans l'évolution du jeu.</p>
+        <div class="flex space-x-2"><span class="text-red-600 font-bold mr-1">Bracelets des WSOP : </span> 10</div>
+        <div class="flex space-x-2"><span class="text-red-600 font-bold mr-1">Gain en carrière : </span> $6M</div>
+      </div>
+
+      <!-- Card 5 -->
+      <div
+        class="col-span-12 md:col-span-6 xl:col-span-4 bg-black rounded-2xl p-4 flex flex-col items-center shadow-lg hover:scale-105 transition-transform">
+        <img src="/assets/images/index/Antonio_Esfandiari.png" alt="Player 5"
+          class="w-32 h-32 rounded-full object-cover border-4 border-red-600 mb-4 shadow-md">
+        <div class="inline-flex items-center justify-center gap-2 mb-1 w-fit">
+          <img src="/assets/images/logo/heart.png" alt="Heart" class="w-6 h-6 md:w-7 md:h-7" />
+          <h3 class="text-xl font-semibold text-white whitespace-nowrap">Antonio Esfandiari</h3>
+          <img src="/assets/images/logo/diamond.png" alt="Diamond" class="w-6 h-6 md:w-7 md:h-7" />
+        </div>
+        <p class="text-gray-300 text-center mb-5">Ancien magicien devenu professionnel du poker, Esfandiari est reconnu
+          pour sa victoire emblématique de 18,3 millions de dollars lors du tournoi "Big One for One Drop" en 2012.</p>
+        <div class="flex space-x-2"><span class="text-red-600 font-bold mr-1">Bracelets des WSOP : </span> 3</div>
+        <div class="flex space-x-2"><span class="text-red-600 font-bold mr-1">Gain en carrière : </span> $28M</div>
+      </div>
+
+      <!-- Card 6 -->
+      <div
+        class="col-span-12 md:col-span-6 xl:col-span-4 bg-black rounded-2xl p-4 flex flex-col items-center shadow-lg hover:scale-105 transition-transform">
+        <img src="/assets/images/index/Johnny_Chan.png" alt="Player 6"
+          class="w-32 h-32 rounded-full object-cover border-4 border-red-600 mb-4 shadow-md">
+        <div class="inline-flex items-center justify-center gap-2 mb-1 w-fit">
+          <img src="/assets/images/logo/heart.png" alt="Heart" class="w-6 h-6 md:w-7 md:h-7" />
+          <h3 class="text-xl font-semibold text-white whitespace-nowrap">Johnny Chan</h3>
+          <img src="/assets/images/logo/diamond.png" alt="Diamond" class="w-6 h-6 md:w-7 md:h-7" />
+        </div>
+        <p class="text-gray-300 text-center mb-5">Double champion du Main Event des WSOP en 1987 et 1988, Chan est une
+          figure emblématique du poker, notamment pour sa participation au film "Rounders".</p>
+        <div class="flex space-x-2"><span class="text-red-600 font-bold mr-1">Bracelets des WSOP : </span> 10</div>
+        <div class="flex space-x-2"><span class="text-red-600 font-bold mr-1">Gain en carrière : </span> $9M</div>
+      </div>
+
+    </section>
+
+    <div class="h-[2px] w-[90%] bg-gradient-to-r from-white/0 via-white/50 to-white/0 my-8 mx-auto"></div>
 
 
 
     <section class="lg:w-[90%] max-w-6xl m-auto grid grid-cols-12">
-      <!-- Pourquoi ce site ?
-But : apprendre, s’amuser, suivre les tournois.
-Présentation rapide de ton application Tournament Director. -->
-    </section>
 
-    <section class="lg:w-[90%] max-w-6xl m-auto grid grid-cols-12">
-       
     </section>
   </main>
 
   <footer class="mt-20 mb-10 grid grid-cols-12"></footer>
 </body>
 
-</html>
+</html>ind

@@ -18,7 +18,7 @@
   <link rel="manifest" href="manifest.json" />
 </head>
 
-<body class="bg-gray-100 text-gray-900">
+<body class="bg-[url('../assets/images/background.png')] bg-cover bg-center text-gray-900">
   <a href="#main" class="sr-only">Aller au contenu principal</a>
 
   <header class="sticky top-0 z-50">
@@ -35,7 +35,7 @@
             class="text-md text-bold text-white bg-red-700 hover:bg-red-800 font-medium rounded-lg px-4 py-2 text-center">Tournament
             Director</button>
           <button data-collapse-toggle="navbar-sticky" type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
             aria-controls="navbar-sticky" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -48,8 +48,8 @@
           <ul
             class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
             <li>
-              <a href="index.html"
-                class="block text-lg py-2 px-3 text-red-700 rounded-sm hover:text-red-700 md:p-0 "aria-current="page">Accueil</a>
+              <a href="index.html" class="block text-lg py-2 px-3 text-red-700 rounded-sm hover:text-red-700 md:p-0 "
+                aria-current="page">Accueil</a>
             </li>
             <li>
               <a href="pages/gallery.html"
@@ -61,7 +61,7 @@
             </li>
             <li>
               <a href="pages/strategy.html"
-                class="block text-lg py-2 px-3 text-white rounded-sm hover:text-red-700 md:p-0">stratégies</a>
+                class="block text-lg py-2 px-3 text-white rounded-sm hover:text-red-700 md:p-0">Stratégies</a>
             </li>
             <li>
               <a href="pages/tournamentInfos.html"
@@ -74,19 +74,75 @@
 
   </header>
 
-  <main class="mt-20 bg-emerald-950 h-screen">
-    <section class="md:w-[90%] max-w-6xl m-auto grid grid-cols-12">
-      <!-- Introduction -->
+  <main class="mt-50 h-[2000px]">
+    <section class="grid grid-cols-12 gap-6 w-[95%] md:w-[90%] max-w-6xl m-auto py-12 px-4 text-white">
+
+      <!-- Text -->
+      <div class="col-start-1 col-span-12 row-start-1 xl:col-span-6
+              flex flex-col justify-center space-y-4
+              text-left md:text-center xl:text-left">
+
+        <!-- H1 with Spade + Club -->
+        <div class="flex items-center justify-start md:justify-center xl:justify-start gap-3">
+          <img src="/assets/images/logo/spade.png" alt="Spade" class="w-8 h-8 md:w-10 md:h-10" />
+          <h1 class="text-4xl xl:text-5xl text-black drop-shadow-[0_0_3px_white] font-bold whitespace-nowrap">
+            À propos du Poker
+          </h1>
+          <img src="/assets/images/logo/club.png" alt="Club" class="w-8 h-8 md:w-10 md:h-10" />
+        </div>
+
+        <p class="text-gray-200 leading-relaxed max-w-2xl md:mx-auto xl:mx-0">
+          Le poker est un jeu de cartes populaire, reconnu autant pour son aspect
+          stratégique que pour son côté social. Né au 19e siècle aux États-Unis, il
+          a rapidement conquis le monde entier.
+        </p>
+
+        <!-- H2 with Heart + Diamond -->
+        <div class="flex items-center justify-start md:justify-center xl:justify-start gap-2 mt-4">
+          <img src="/assets/images/logo/heart.png" alt="Heart" class="w-6 h-6 md:w-7 md:h-7" />
+          <h2
+            class="text-lg md:text-xl xl:text-2xl font-semibold text-red-600 drop-shadow-[0_0_2px_black] whitespace-nowrap">
+            Variantes principales
+          </h2>
+          <img src="/assets/images/logo/diamond.png" alt="Diamond" class="w-6 h-6 md:w-7 md:h-7" />
+        </div>
+
+        <!-- List -->
+        <ul class="space-y-1 text-gray-200 
+               md:flex md:flex-col md:items-center md:space-y-2 
+               xl:list-disc xl:pl-6 xl:items-start xl:text-left">
+          <li><span class="font-medium">Texas Hold’em</span> – La version la plus jouée dans le monde.</li>
+          <li><span class="font-medium">Omaha</span> – Similaire au Hold’em mais avec 4 cartes en main.</li>
+          <li><span class="font-medium">Stud Poker</span> – Variante plus traditionnelle, sans cartes communes.</li>
+        </ul>
+
+        <!-- Button -->
+        <button
+          class="mt-6 w-fit md:mx-auto xl:mx-0 font-bold text-md bg-red-700 hover:bg-red-800 rounded-xl px-6 py-3 text-center shadow-lg transition">
+          En savoir plus
+        </button>
+      </div>
+
+      <!-- Image -->
+      <div class="col-start-1 col-span-12 row-start-2 
+              md:col-start-3 md:col-span-8
+              xl:col-start-7 xl:col-span-6 xl:row-start-1 
+              flex items-center justify-center">
+        <img src="/assets/images/index/cards.png" alt="Poker cards"
+          class="w-3/4 md:w-2/3 xl:w-[85%] h-auto object-contain drop-shadow-2xl" />
+      </div>
     </section>
-    <section class="md:w-[90%] max-w-6xl m-auto grid grid-cols-12">
-      <!-- À propos du poker
-Petit historique du poker.
-Types de variantes (Texas Hold’em, Omaha…). -->
-    </section>
-    <section class="md:w-[90%] max-w-6xl m-auto grid grid-cols-12">
+
+
+
+    <section class="lg:w-[90%] max-w-6xl m-auto grid grid-cols-12">
       <!-- Pourquoi ce site ?
 But : apprendre, s’amuser, suivre les tournois.
 Présentation rapide de ton application Tournament Director. -->
+    </section>
+
+    <section class="lg:w-[90%] max-w-6xl m-auto grid grid-cols-12">
+       
     </section>
   </main>
 

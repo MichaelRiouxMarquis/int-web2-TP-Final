@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="" />
-  <title></title>
+  <meta name="description"
+    content="Découvrez des stratégies, des guides et des actualités poker. Profitez également de notre Tournament Director gratuit, un outil essentiel pour organiser des tournois privés. Devenez membre de la communauté !" />
+  <title>The SevenDeuce Club</title>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -18,7 +19,7 @@
   <link rel="manifest" href="manifest.json" />
 </head>
 
-<body class="bg-[url('../assets/images/background.png')] bg-cover bg-center h-auto text-gray-900">
+<body class="h-full bg-gradient-to-b from-[#037a72] via-[#002422] to-[#037a72] text-gray-900">
   <a href="#main" class="sr-only">Aller au contenu principal</a>
 
   <header class="sticky top-0 z-50">
@@ -27,7 +28,7 @@
     <nav class="bg-black fixed w-full z-20 top-0 start-0 border-b border-white">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="/assets/images/logo/poker.png" class="h-30" alt="Flowbite Logo">
+          <img src="assets/images/logo/poker.png" class="h-30" alt="Flowbite Logo">
           <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">The SevenDeuce Club</span>
         </a>
         <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -74,64 +75,58 @@
 
   </header>
 
-  <main class="mt-50 h-[2000px]">
+  <main class="mt-50">
+
     <section class="grid grid-cols-12 gap-6 w-[95%] md:w-[90%] max-w-6xl m-auto py-12 px-4 text-white">
 
-      <!-- Text -->
       <div class="col-start-1 col-span-12 row-start-1 xl:col-span-6
               flex flex-col justify-center space-y-4
               text-left md:text-center xl:text-left">
 
-        <!-- H1 with Spade + Club -->
         <div class="flex items-center justify-start md:justify-center xl:justify-start gap-3">
-          <img src="/assets/images/logo/spade.png" alt="Spade" class="w-8 h-8 md:w-10 md:h-10" />
-          <h1 class="text-4xl xl:text-5xl text-black drop-shadow-[0_0_3px_white] font-bold whitespace-nowrap">
+          <img src="assets/images/logo/spade.png" alt="Symbole de pique" class="w-8 h-8 md:w-10 md:h-10" />
+          <h1 class="text-4xl xl:text-5xl text-black drop-shadow-[0_0_10px_white] font-bold whitespace-nowrap">
             À propos du Poker
           </h1>
-          <img src="/assets/images/logo/club.png" alt="Club" class="w-8 h-8 md:w-10 md:h-10" />
+          <img src="assets/images/logo/club.png" alt="Symbole de trèfle" class="w-8 h-8 md:w-10 md:h-10" />
         </div>
 
-        <p class="text-gray-200 leading-relaxed max-w-2xl md:mx-auto xl:mx-0">
+        <p class="text-gray-200 text-xl leading-relaxed max-w-2xl md:mx-auto xl:mx-0">
           Le poker est un jeu de cartes populaire, reconnu autant pour son aspect
           stratégique que pour son côté social. Né au 19e siècle aux États-Unis, il
           a rapidement conquis le monde entier.
         </p>
 
-        <!-- H2 with Heart + Diamond -->
         <div class="flex items-center justify-start md:justify-center xl:justify-start gap-2 mt-4">
-          <img src="/assets/images/logo/heart.png" alt="Heart" class="w-6 h-6 md:w-7 md:h-7" />
+          <img src="assets/images/logo/heart.png" alt="Symbole de coeur" class="w-6 h-6 md:w-7 md:h-7" />
           <h2
-            class="text-lg md:text-xl xl:text-2xl font-semibold text-red-600 drop-shadow-[0_0_2px_black] whitespace-nowrap">
+            class="text-lg md:text-xl xl:text-2xl font-bold text-red-600 drop-shadow-[0_0_4px_black] whitespace-nowrap">
             Variantes principales
           </h2>
-          <img src="/assets/images/logo/diamond.png" alt="Diamond" class="w-6 h-6 md:w-7 md:h-7" />
+          <img src="assets/images/logo/diamond.png" alt="Symbole de carreau" class="w-6 h-6 md:w-7 md:h-7" />
         </div>
 
-        <!-- List -->
         <ul class="space-y-1 text-gray-200 
                md:flex md:flex-col md:items-center md:space-y-2 
                xl:list-disc xl:pl-6 xl:items-start xl:text-left">
-          <li><span class="font-medium">Texas Hold’em</span> – La version la plus jouée dans le monde.</li>
-          <li><span class="font-medium">Omaha</span> – Similaire au Hold’em mais avec 4 cartes en main.</li>
-          <li><span class="font-medium">Stud Poker</span> – Variante plus traditionnelle, sans cartes communes.</li>
+          <li><span class="font-medium">Texas Hold'em</span> - La version la plus jouée dans le monde.</li>
+          <li><span class="font-medium">Omaha</span> - Similaire au Hold'em mais avec 4 cartes en main.</li>
+          <li><span class="font-medium">Stud Poker</span> - Variante plus traditionnelle, sans cartes communes.</li>
         </ul>
 
-        <!-- Button -->
         <button
           class="mt-6 w-fit md:mx-auto xl:mx-0 font-bold text-md bg-red-700 hover:bg-red-800 rounded-xl px-6 py-3 text-center shadow-lg transition">
           En savoir plus
         </button>
       </div>
 
-      <!-- Image -->
       <div class="col-start-1 col-span-12 row-start-2 
               md:col-start-3 md:col-span-8
               xl:col-start-7 xl:col-span-6 xl:row-start-1 
               flex items-center justify-center">
-        <img src="/assets/images/index/cards.png" alt="Poker cards"
+        <img src="assets/images/index/cards.png" alt="Cartes de poker , Royal de pique"
           class="w-3/4 md:w-2/3 xl:w-[85%] h-auto object-contain drop-shadow-2xl" />
       </div>
-
 
     </section>
 
@@ -141,13 +136,13 @@
 
       <div class="col-start-1 col-span-12 flex flex-col items-center space-y-4 mb-8">
         <div class="flex items-center justify-center gap-3">
-          <img src="/assets/images/logo/spade.png" alt="Spade" class="w-8 h-8 md:w-10 md:h-10" />
-          <h2 class="text-3xl xl:text-4xl text-black drop-shadow-[0_0_3px_white] font-bold whitespace-nowrap">
+          <img src="assets/images/logo/spade.png" alt="Symbole de pique" class="w-8 h-8 md:w-10 md:h-10" />
+          <h2 class="text-3xl xl:text-4xl text-black drop-shadow-[0_0_10px_white] font-bold whitespace-nowrap">
             Légendes du Poker
           </h2>
-          <img src="/assets/images/logo/club.png" alt="Club" class="w-8 h-8 md:w-10 md:h-10" />
+          <img src="assets/images/logo/club.png" alt="Symbole de trèfle" class="w-8 h-8 md:w-10 md:h-10" />
         </div>
-        <p class="text-gray-200 max-w-2xl text-center">
+        <p class="text-gray-200 text-xl max-w-2xl text-center">
           Découvrez certains des joueurs les plus célèbres et influents dans l’histoire du poker.
         </p>
       </div>
@@ -155,12 +150,12 @@
       <!-- Card 1 -->
       <div
         class="col-span-12 md:col-span-6 xl:col-span-4 bg-black rounded-2xl p-4 flex flex-col items-center shadow-lg hover:scale-105 transition-transform">
-        <img src="/assets/images/index/Phil_Hellmuth.png" alt="Player 1"
+        <img src="assets/images/index/Phil_Hellmuth.png" alt="Photo de de profil du joueur de poker Phil Hellmuth"
           class="w-32 h-32 rounded-full object-cover border-4 border-red-600 mb-4 shadow-md">
         <div class="inline-flex items-center justify-center gap-2 mb-1 w-fit">
-          <img src="/assets/images/logo/heart.png" alt="Heart" class="w-6 h-6 md:w-7 md:h-7" />
+          <img src="assets/images/logo/heart.png" alt="Symbole de coeur" class="w-6 h-6 md:w-7 md:h-7" />
           <h3 class="text-xl font-semibold text-white whitespace-nowrap">Phil Hellmuth</h3>
-          <img src="/assets/images/logo/diamond.png" alt="Diamond" class="w-6 h-6 md:w-7 md:h-7" />
+          <img src="assets/images/logo/diamond.png" alt="Symbole de carreau" class="w-6 h-6 md:w-7 md:h-7" />
         </div>
         <p class="text-gray-300 text-center mb-5">Phil Hellmuth est reconnu comme l'un des plus grands joueurs de poker
           de tous les temps, avec un record de 17 bracelets WSOP. Il est également l'auteur de plusieurs livres, dont
@@ -172,12 +167,12 @@
       <!-- Card 2 -->
       <div
         class="col-span-12 md:col-span-6 xl:col-span-4 bg-black rounded-2xl p-4 flex flex-col items-center shadow-lg hover:scale-105 transition-transform">
-        <img src="/assets/images/index/Daniel_Negreanu.png" alt="Player 2"
+        <img src="assets/images/index/Daniel_Negreanu.png" alt="Photo de de profil du joueur de poker Daniel Negreanu"
           class="w-32 h-32 rounded-full object-cover border-4 border-red-600 mb-4 shadow-md">
         <div class="inline-flex items-center justify-center gap-2 mb-1 w-fit">
-          <img src="/assets/images/logo/heart.png" alt="Heart" class="w-6 h-6 md:w-7 md:h-7" />
+          <img src="assets/images/logo/heart.png" alt="Symbole de coeur" class="w-6 h-6 md:w-7 md:h-7" />
           <h3 class="text-xl font-semibold text-white whitespace-nowrap">Daniel Negreanu</h3>
-          <img src="/assets/images/logo/diamond.png" alt="Diamond" class="w-6 h-6 md:w-7 md:h-7" />
+          <img src="assets/images/logo/diamond.png" alt="Symbole de carreau" class="w-6 h-6 md:w-7 md:h-7" />
         </div>
         <p class="text-gray-300 text-center mb-5">Daniel Negreanu est un joueur de poker canadien reconnu pour sa
           capacité à lire les adversaires et son style de jeu agressif. Il a remporté six bracelets WSOP et est le seul
@@ -189,12 +184,12 @@
       <!-- Card 3 -->
       <div
         class="col-span-12 md:col-span-6 xl:col-span-4 bg-black rounded-2xl p-4 flex flex-col items-center shadow-lg hover:scale-105 transition-transform">
-        <img src="/assets/images/index/Phil_Ivey.png" alt="Player 3"
+        <img src="assets/images/index/Phil_Ivey.png" alt="Photo de de profil du joueur de poker Phil Ivey"
           class="w-32 h-32 rounded-full object-cover border-4 border-red-600 mb-4 shadow-md">
         <div class="inline-flex items-center justify-center gap-2 mb-1 w-fit">
-          <img src="/assets/images/logo/heart.png" alt="Heart" class="w-6 h-6 md:w-7 md:h-7" />
+          <img src="assets/images/logo/heart.png" alt="Symbole de coeur" class="w-6 h-6 md:w-7 md:h-7" />
           <h3 class="text-xl font-semibold text-white whitespace-nowrap">Phil Ivey</h3>
-          <img src="/assets/images/logo/diamond.png" alt="Diamond" class="w-6 h-6 md:w-7 md:h-7" />
+          <img src="assets/images/logo/diamond.png" alt="Symbole de carreau" class="w-6 h-6 md:w-7 md:h-7" />
         </div>
         <p class="text-gray-300 text-center mb-5">Phil Ivey est considéré comme l'un des meilleurs joueurs de poker au
           monde, avec 10 bracelets WSOP et une victoire au World Poker Tour. Il est réputé pour sa polyvalence et sa
@@ -206,12 +201,12 @@
       <!-- Card 4 -->
       <div
         class="col-span-12 md:col-span-6 xl:col-span-4 bg-black rounded-2xl p-4 flex flex-col items-center shadow-lg hover:scale-105 transition-transform">
-        <img src="/assets/images/index/Doyle_Brunson.png" alt="Player 4"
+        <img src="assets/images/index/Doyle_Brunson.png" alt="Photo de de profil du joueur de poker Doyle Brunson"
           class="w-32 h-32 rounded-full object-cover border-4 border-red-600 mb-4 shadow-md">
         <div class="inline-flex items-center justify-center gap-2 mb-1 w-fit">
-          <img src="/assets/images/logo/heart.png" alt="Heart" class="w-6 h-6 md:w-7 md:h-7" />
+          <img src="assets/images/logo/heart.png" alt="Symbole de coeur" class="w-6 h-6 md:w-7 md:h-7" />
           <h3 class="text-xl font-semibold text-white whitespace-nowrap">Doyle Brunson</h3>
-          <img src="/assets/images/logo/diamond.png" alt="Diamond" class="w-6 h-6 md:w-7 md:h-7" />
+          <img src="assets/images/logo/diamond.png" alt="Symbole de carreau" class="w-6 h-6 md:w-7 md:h-7" />
         </div>
         <p class="text-gray-300 text-center mb-5">Doyle Brunson est une légende du poker, avec 10 bracelets WSOP et deux
           victoires au Main Event. Il est l'auteur de Super/System, un livre fondamental pour les joueurs de poker, et a
@@ -223,12 +218,13 @@
       <!-- Card 5 -->
       <div
         class="col-span-12 md:col-span-6 xl:col-span-4 bg-black rounded-2xl p-4 flex flex-col items-center shadow-lg hover:scale-105 transition-transform">
-        <img src="/assets/images/index/Antonio_Esfandiari.png" alt="Player 5"
+        <img src="assets/images/index/Antonio_Esfandiari.png"
+          alt="Photo de de profil du joueur de poker Antonio Esfandiari"
           class="w-32 h-32 rounded-full object-cover border-4 border-red-600 mb-4 shadow-md">
         <div class="inline-flex items-center justify-center gap-2 mb-1 w-fit">
-          <img src="/assets/images/logo/heart.png" alt="Heart" class="w-6 h-6 md:w-7 md:h-7" />
+          <img src="assets/images/logo/heart.png" alt="Symbole de coeur" class="w-6 h-6 md:w-7 md:h-7" />
           <h3 class="text-xl font-semibold text-white whitespace-nowrap">Antonio Esfandiari</h3>
-          <img src="/assets/images/logo/diamond.png" alt="Diamond" class="w-6 h-6 md:w-7 md:h-7" />
+          <img src="assets/images/logo/diamond.png" alt="Symbole de carreau" class="w-6 h-6 md:w-7 md:h-7" />
         </div>
         <p class="text-gray-300 text-center mb-5">Ancien magicien devenu professionnel du poker, Esfandiari est reconnu
           pour sa victoire emblématique de 18,3 millions de dollars lors du tournoi "Big One for One Drop" en 2012.</p>
@@ -239,12 +235,12 @@
       <!-- Card 6 -->
       <div
         class="col-span-12 md:col-span-6 xl:col-span-4 bg-black rounded-2xl p-4 flex flex-col items-center shadow-lg hover:scale-105 transition-transform">
-        <img src="/assets/images/index/Johnny_Chan.png" alt="Player 6"
+        <img src="assets/images/index/Johnny_Chan.png" alt="Photo de de profil du joueur de poker Johnny Chan"
           class="w-32 h-32 rounded-full object-cover border-4 border-red-600 mb-4 shadow-md">
         <div class="inline-flex items-center justify-center gap-2 mb-1 w-fit">
-          <img src="/assets/images/logo/heart.png" alt="Heart" class="w-6 h-6 md:w-7 md:h-7" />
+          <img src="assets/images/logo/heart.png" alt="Symbole de coeur" class="w-6 h-6 md:w-7 md:h-7" />
           <h3 class="text-xl font-semibold text-white whitespace-nowrap">Johnny Chan</h3>
-          <img src="/assets/images/logo/diamond.png" alt="Diamond" class="w-6 h-6 md:w-7 md:h-7" />
+          <img src="assets/images/logo/diamond.png" alt="Symbole de carreau" class="w-6 h-6 md:w-7 md:h-7" />
         </div>
         <p class="text-gray-300 text-center mb-5">Double champion du Main Event des WSOP en 1987 et 1988, Chan est une
           figure emblématique du poker, notamment pour sa participation au film "Rounders".</p>
@@ -257,13 +253,225 @@
     <div class="h-[2px] w-[90%] bg-gradient-to-r from-white/0 via-white/50 to-white/0 my-8 mx-auto"></div>
 
 
+    <section id="Inscription" class="grid grid-cols-12 gap-6 w-[95%] md:w-[90%] max-w-6xl m-auto py-12 px-4 text-white">
 
-    <section class="lg:w-[90%] max-w-6xl m-auto grid grid-cols-12">
+      <div class="col-span-12 flex flex-col items-center space-y-4 mb-8">
+        <div class="flex items-center justify-center gap-3">
+          <img src="assets/images/logo/spade.png" alt="Symbole de pique" class="w-8 h-8 md:w-10 md:h-10" />
+          <h2 class="text-3xl xl:text-4xl text-black drop-shadow-[0_0_10px_white] font-bold whitespace-nowrap">
+            Inscription au Club de Poker
+          </h2>
+          <img src="assets/images/logo/club.png" alt="Symbole de trèfle" class="w-8 h-8 md:w-10 md:h-10" />
+        </div>
+        <p class="text-gray-200 text-xl max-w-2xl text-center">
+          Rejoignez notre communauté de joueurs et recevez des conseils, tournois et offres exclusives !
+        </p>
+        <p class="text-gray-200 text-xl max-w-2xl text-center">
+          Pour les résidents du <span class="text-red-600 text-bold">Québec</span> seulement !
+        </p>
+      </div>
 
+      <form id="pokerForm" novalidate
+        class="col-span-12 bg-black bg-opacity-80 rounded-2xl p-6 shadow-lg grid grid-cols-12 gap-4">
+
+        <!-- Prénom -->
+        <div class="col-span-12 md:col-span-6 xl:col-span-4">
+          <label class="block text-gray-200 mb-1" for="firstName">
+            Prénom <span class="text-red-600">*</span>
+          </label>
+          <input type="text" id="firstName" name="firstName" class="w-full p-3 rounded-lg bg-gray-100 text-black"
+            placeholder="Votre prénom">
+          <p class="text-red-500 text-sm mt-1 hidden" id="error-firstName"></p>
+        </div>
+
+        <!-- Nom -->
+        <div class="col-span-12 md:col-span-6 xl:col-span-4">
+          <label class="block text-gray-200 mb-1" for="lastName">
+            Nom <span class="text-red-600">*</span>
+          </label>
+          <input type="text" id="lastName" name="lastName" class="w-full p-3 rounded-lg bg-gray-100 text-black"
+            placeholder="Votre nom">
+          <p class="text-red-500 text-sm mt-1 hidden" id="error-lastName"></p>
+        </div>
+
+        <!-- Pseudo -->
+        <div class="col-span-12 md:col-span-6 xl:col-span-4">
+          <label class="block text-gray-200 mb-1" for="username">
+            Pseudo <span class="text-red-600">*</span>
+          </label>
+          <input type="text" id="username" name="username" class="w-full p-3 rounded-lg bg-gray-100 text-black"
+            placeholder="Votre pseudo">
+          <p class="text-red-500 text-sm mt-1 hidden" id="error-username"></p>
+        </div>
+
+        <!-- Email -->
+        <div class="col-span-12 md:col-span-6 xl:col-span-4">
+          <label class="block text-gray-200 mb-1" for="email">
+            Email <span class="text-red-600">*</span>
+          </label>
+          <input type="email" id="email" name="email" class="w-full p-3 rounded-lg bg-gray-100 text-black"
+            placeholder="exemple@mail.com">
+          <p class="text-red-500 text-sm mt-1 hidden" id="error-email"></p>
+        </div>
+
+        <!-- Mot de passe -->
+        <div class="col-span-12 md:col-span-6 xl:col-span-4">
+          <label class="block text-gray-200 mb-1" for="password">
+            Mot de passe <span class="text-red-600">*</span>
+          </label>
+          <input type="password" id="password" name="password" class="w-full p-3 rounded-lg bg-gray-100 text-black"
+            placeholder="Mot de passe">
+          <p class="text-red-500 text-sm mt-1 hidden" id="error-password"></p>
+        </div>
+
+        <!-- Date de naissance -->
+        <div class="col-span-12 md:col-span-6 xl:col-span-4">
+          <label class="block text-gray-200 mb-1" for="birthdate">
+            Date de naissance <span class="text-red-600">*</span>
+          </label>
+          <input type="date" id="birthdate" name="birthdate" class="w-full p-3 rounded-lg bg-gray-100 text-black">
+          <p class="text-red-500 text-sm mt-1 hidden" id="error-birthdate"></p>
+        </div>
+
+        <!-- Ville -->
+        <div class="col-span-12 md:col-span-6 xl:col-span-4">
+          <label class="block text-gray-200 mb-1" for="city">
+            Ville <span class="text-red-600">*</span>
+          </label>
+          <input type="text" id="city" name="city" class="w-full p-3 rounded-lg bg-gray-100 text-black"
+            placeholder="Votre ville">
+          <p class="text-red-500 text-sm mt-1 hidden" id="error-city"></p>
+        </div>
+
+        <!-- Type de joueur -->
+        <div class="col-span-12 md:col-span-6 xl:col-span-4">
+          <label class="block text-gray-200 mb-1" for="playerType">
+            Type de joueur <span class="text-red-600">*</span>
+          </label>
+          <select id="playerType" name="playerType" class="w-full p-3 rounded-lg bg-gray-100 text-black">
+            <option value="">Sélectionnez votre niveau</option>
+            <option value="beginner">Débutant</option>
+            <option value="intermediate">Intermédiaire</option>
+            <option value="expert">Expert</option>
+          </select>
+          <p class="text-red-500 text-sm mt-1 hidden" id="error-playerType"></p>
+        </div>
+
+        <!-- Newsletter + Règles -->
+        <div class="col-span-12 md:col-span-6 xl:col-span-4 flex flex-col space-y-4 mt-6 xl:mx-auto mx-0">
+
+          <div class="flex items-center space-x-2">
+            <input type="checkbox" id="newsletter" name="newsletter" class="w-4 h-4 text-red-700 bg-gray-900 rounded">
+            <label class="text-gray-200" for="newsletter">Je souhaite recevoir la newsletter</label>
+          </div>
+
+          <div>
+            <div class="flex items-center space-x-2">
+              <input type="checkbox" id="acceptRules" name="acceptRules"
+                class="w-4 h-4 text-red-700 bg-gray-900 rounded">
+              <label class="text-gray-200" for="acceptRules">J'accepte les <a href="#"
+                  class="text-red-600 underline">règles du site</a> <span class="text-red-600">*</span></label>
+            </div>
+            <p class="text-red-500 text-sm mt-1 hidden" id="error-acceptRules"></p>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="col-span-6 flex justify-left mt-4">
+          <button type="submit"
+            class="w-70 h-12 bg-red-700 hover:bg-red-800 text-white font-bold px-6 py-3 rounded-xl shadow-lg transition">
+            S'inscrire
+          </button>
+        </div>
+
+      </form>
     </section>
   </main>
 
-  <footer class="mt-20 mb-10 grid grid-cols-12"></footer>
+  <!-- Module tailwind préfait de Flowbite :  https://flowbite.com/docs/components/footer/ -->
+  <footer class="bg-black">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div class="md:flex md:justify-between">
+        <div class="mb-6 md:mb-0">
+          <a href="index.html" class="flex items-center lg:flex-row flex-col">
+            <img src="assets/images/logo/poker.png" class="h-25 me-3" alt="Le logo : The SevenDeuce" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">The SevenDeuce Club</span>
+          </a>
+        </div>
+        <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 ml-10">
+          <div>
+            <h2 class="mb-6 text-sm font-semibold uppercase text-[#04a199]">Nous joindre</h2>
+            <ul class="text-gray-200 font-medium space-y-2">
+              <li>
+                <a href="mailto:thesevendeuce@hotmail.com" class="hover:text-red-600">Courriel</a>
+              </li>
+              <li>
+                <a href="index.html#Inscription" class="hover:text-red-600">S'inscrire</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="mb-6 text-sm font-semibold uppercase text-[#04a199]">Salles de poker</h2>
+            <ul class="text-gray-200 font-medium space-y-2">
+              <li>
+                <a href="https://playground.poker" class="hover:text-red-600">Playground Poker Club</a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/groups/1440349292932876" class="hover:text-red-600">Le Tapis Vert</a>
+              </li>
+              <li>
+                <a href="https://casinos.lotoquebec.com/fr/montreal/accueil" class="hover:text-red-600">Casino de
+                  Montréal</a>
+              </li>
+              <li>
+                <a href="https://casinos.lotoquebec.com/fr/lacleamy/accueil" class="hover:text-red-600">Casino du
+                  Lac-Leamy</a>
+              </li>
+              <li>
+                <a href="https://salonsdejeux.lotoquebec.com/fr/quebec/accueil" class="hover:text-red-600">Salon de jeux
+                  de Québec</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="mb-6 text-sm font-semibold uppercase text-[#04a199]">Legal</h2>
+            <ul class="text-gray-200 font-medium space-y-2">
+              <li>
+                <a href="#" class="hover:text-red-600">Règles du site</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-600">Gestion des cookies</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-600">Politique de confidentialité</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-600">Conditions d'utilisation</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-[1px] bg-gradient-to-r from-[#002422] via-[#037a72] to-[#002422] my-8 mx-auto"></div>
+
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <span class="text-sm text-gray-300 sm:text-center">© 2023 <a href="https://flowbite.com/"
+            class="hover:text-red-600">Flowbite™</a>. All Rights Reserved.</span>
+        <div class="flex mt-4 sm:justify-center sm:mt-0">
+          <a href="https://www.facebook.com/" class="text-gray-300 hover:text-red-600 ms-5"><i
+              class='bx bxl-facebook text-4xl' style='color:#ffffff'></i></a>
+          <a href="https://discord.com/" class="text-gray-300 hover:text-red-600 ms-5"><i
+              class='bx bxl-discord-alt text-4xl' style='color:#ffffff'></i></a>
+          <a href="https://www.instagram.com" class="text-gray-300 hover:text-red-600 ms-5"><i
+              class='bx bxl-instagram text-4xl' style='color:#ffffff'></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/scripts/formValidation.js"></script>
+
 </body>
 
-</html>ind
+</html>

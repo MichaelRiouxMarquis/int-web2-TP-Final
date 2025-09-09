@@ -19,7 +19,7 @@
   <link rel="manifest" href="manifest.json" />
 </head>
 
-<body class="h-full bg-gradient-to-b from-[#037a72] via-[#002422] to-[#037a72] text-gray-900">
+<body class="h-full bg-gradient-to-b from-[#0B645A] via-[#002420] to-[#0B645A] text-gray-900">
   <a href="#main" class="sr-only">Aller au contenu principal</a>
 
   <header class="sticky top-0 z-50">
@@ -76,58 +76,65 @@
 
   </header>
 
-  <main class="mt-50">
+  <main class="mt-38">
 
-    <section class="grid grid-cols-12 gap-6 w-[95%] md:w-[90%] max-w-6xl m-auto py-12 px-4 text-white">
-
-      <div class="col-start-1 col-span-12 row-start-1 xl:col-span-6
+    <section class="bg-[url('assets/images/index/background.jpg')] bg-cover bg-center">
+      <div class="bg-black/70 pt-10">
+        <div class="max-w-[1920px] mx-auto grid grid-cols-12 gap-6 py-12 xl:px-[10%] px-[5%] text-white">
+          <div class="col-start-1 col-span-12 row-start-1 xl:col-span-6
               flex flex-col justify-center space-y-4
               text-left md:text-center xl:text-left">
 
-        <div class="flex items-center justify-start md:justify-center xl:justify-start gap-3">
-          <img src="assets/images/logo/spade.png" alt="Symbole de pique" class="w-8 h-8 md:w-10 md:h-10" />
-          <h1
-            class="text-2xl  md:text-4xl xl:text-5xl text-black drop-shadow-[0_0_10px_white] font-bold max-lg:whitespace-nowrap">
-            À propos du Poker
-          </h1>
-          <img src="assets/images/logo/club.png" alt="Symbole de trèfle" class="w-8 h-8 md:w-10 md:h-10" />
-        </div>
+            <div class="flex items-center justify-start md:justify-center xl:justify-start gap-3">
+              <img src="assets/images/logo/spade.png" alt="Symbole de pique"
+                class="w-8 h-8 md:w-10 md:h-10 drop-shadow-[1px_1px_8px_white]" />
+              <h1
+                class="text-[2.1rem] md:text-[2.5rem] xl:text-[3rem] text-white font-bold drop-shadow-[0_0_8px_red] whitespace-nowrap">
+                À propos du Poker
+              </h1>
+              <img src="assets/images/logo/club.png" alt="Symbole de trèfle"
+                class="w-8 h-8 md:w-10 md:h-10 drop-shadow-[1px_1px_8px_white]" />
+            </div>
+            <p class="text-2xl leading-relaxed max-w-2xl md:mx-auto xl:mx-0">
 
-        <p class="text-gray-200 text-xl leading-relaxed max-w-2xl md:mx-auto xl:mx-0">
-          Le poker est un jeu de cartes populaire, reconnu autant pour son aspect
-          stratégique que pour son côté social. Né au 19e siècle aux États-Unis, il
-          a rapidement conquis le monde entier.
-        </p>
+              Le poker est un jeu de cartes populaire, reconnu autant pour son aspect
+              stratégique que pour son côté social. Né au 19e siècle aux États-Unis, il
+              a rapidement conquis le monde entier.
+            </p>
 
-        <div class="flex items-center justify-start md:justify-center xl:justify-start gap-2 mt-4">
-          <img src="assets/images/logo/heart.png" alt="Symbole de coeur" class="w-6 h-6 md:w-7 md:h-7" />
-          <h2
-            class="text-lg md:text-xl xl:text-2xl font-bold text-red-600 drop-shadow-[0_0_4px_black] whitespace-nowrap">
-            Variantes principales
-          </h2>
-          <img src="assets/images/logo/diamond.png" alt="Symbole de carreau" class="w-6 h-6 md:w-7 md:h-7" />
-        </div>
+            <div class="flex items-center justify-start md:justify-center xl:justify-start gap-2 mt-4">
+              <img src="assets/images/logo/heart.png" alt="Symbole de coeur" class="w-6 h-6 md:w-7 md:h-7" />
+              <h2
+                class="text-[1.4rem] md:text-[1.5rem] xl:text-[1.8rem] font-bold text-white drop-shadow-[0_0_8px_red] whitespace-nowrap">
+                Variantes principales
+              </h2>
+              <img src="assets/images/logo/diamond.png" alt="Symbole de carreau" class="w-6 h-6 md:w-7 md:h-7" />
+            </div>
 
-        <ul class="space-y-1 text-gray-200 
+            <ul class="space-y-1 text-gray-200 text-2xl
                md:flex md:flex-col md:items-center md:space-y-2 
-               xl:list-disc xl:pl-6 xl:items-start xl:text-left">
-          <li><span class="font-medium">Texas Hold'em</span> - La version la plus jouée dans le monde.</li>
-          <li><span class="font-medium">Omaha</span> - Similaire au Hold'em mais avec 4 cartes en main.</li>
-          <li><span class="font-medium">Stud Poker</span> - Variante plus traditionnelle, sans cartes communes.</li>
-        </ul>
+               xl:list-disc xl:pl-6 xl:items-start xl:text-left whitespace-nowrap">
+              <li><span class="font-medium">Texas Hold'em</span> - La version la plus jouée dans le monde.</li>
+              <li><span class="font-medium">Omaha</span> - Similaire au Hold'em mais avec 4 cartes en main.</li>
+              <li><span class="font-medium">Stud Poker</span> - Variante plus traditionnelle à 7 cartes</li>
+            </ul>
 
-        <button
-          class="mt-6 w-fit md:mx-auto xl:mx-0 font-bold text-md bg-red-700 hover:bg-red-800 rounded-xl px-6 py-3 text-center shadow-lg transition">
-          En savoir plus
-        </button>
-      </div>
+            <button
+              class="mt-6 w-fit md:mx-auto xl:mx-0 font-bold text-md bg-red-700 hover:bg-red-800 rounded-xl px-6 py-3 text-center shadow-lg transition">
+              En savoir plus
+            </button>
+          </div>
 
-      <div class="col-start-1 col-span-12 row-start-2 
+          <div class="col-start-1 col-span-12 row-start-2 
               md:col-start-3 md:col-span-8
               xl:col-start-7 xl:col-span-6 xl:row-start-1 
               flex items-center justify-center">
-        <img src="assets/images/index/cards.png" alt="Cartes de poker , Royal de pique"
-          class="w-3/4 md:w-2/3 xl:w-[85%] h-auto object-contain drop-shadow-2xl" />
+            <img src="assets/images/index/cards.png" alt="Cartes de poker , Royal de pique"
+              class="w-auto h-auto xl:w-[85%] h-auto object-contain drop-shadow-2xl" />
+          </div>
+
+        </div>
+
       </div>
 
     </section>
@@ -138,12 +145,14 @@
 
       <div class="col-start-1 col-span-12 flex flex-col items-center space-y-4 mb-8">
         <div class="flex items-center justify-center gap-3">
-          <img src="assets/images/logo/spade.png" alt="Symbole de pique" class="w-8 h-8 md:w-10 md:h-10" />
+          <img src="assets/images/logo/spade.png" alt="Symbole de pique"
+            class="w-8 h-8 md:w-10 md:h-10 drop-shadow-[1px_1px_8px_white]" />
           <h2
-            class="text-2xl md:text-3xl xl:text-4xl text-black drop-shadow-[0_0_10px_white] font-bold whitespace-nowrap">
+            class="text-[1.5rem] md:text-[1.8rem] xl:text-[2rem] text-white drop-shadow-[0_0_8px_red] font-bold whitespace-nowrap">
             Légendes du Poker
           </h2>
-          <img src="assets/images/logo/club.png" alt="Symbole de trèfle" class="w-8 h-8 md:w-10 md:h-10" />
+          <img src="assets/images/logo/club.png" alt="Symbole de trèfle"
+            class="w-8 h-8 md:w-10 md:h-10 drop-shadow-[1px_1px_8px_white]" />
         </div>
         <p class="text-gray-200 text-xl max-w-2xl text-center">
           Découvrez certains des joueurs les plus célèbres et influents dans l’histoire du poker.
@@ -260,12 +269,14 @@
 
       <div class="col-span-12 flex flex-col items-center space-y-4 mb-8">
         <div class="flex items-center justify-center gap-3">
-          <img src="assets/images/logo/spade.png" alt="Symbole de pique" class="w-8 h-8 md:w-10 md:h-10" />
+          <img src="assets/images/logo/spade.png" alt="Symbole de pique"
+            class="w-8 h-8 md:w-10 md:h-10 drop-shadow-[1px_1px_8px_white]" />
           <h2
-            class="text-2xl md:text-3xl xl:text-4xl text-black drop-shadow-[0_0_10px_white] font-bold md:whitespace-nowrap">
+            class="text-[1.5rem] md:text-[1.8rem] xl:text-[2rem] text-white drop-shadow-[0_0_8px_red] font-bold md:whitespace-nowrap">
             Inscription au Club de Poker
           </h2>
-          <img src="assets/images/logo/club.png" alt="Symbole de trèfle" class="w-8 h-8 md:w-10 md:h-10" />
+          <img src="assets/images/logo/club.png" alt="Symbole de trèfle"
+            class="w-8 h-8 md:w-10 md:h-10 drop-shadow-[1px_1px_8px_white]" />
         </div>
         <p class="text-gray-200 text-xl max-w-2xl text-center">
           Rejoignez notre communauté de joueurs et recevez des conseils, tournois et offres exclusives !
@@ -399,11 +410,12 @@
         <div class="mb-6 md:mb-0">
           <a href="index.html" class="flex items-center lg:flex-row flex-col">
             <img src="assets/images/logo/poker.png" class="h-25 me-3" alt="Le logo : The SevenDeuce" />
-            <span class="mainLogo__title--cardoFont self-center text-2xl font-semibold whitespace-nowrap text-white">The
+            <span
+              class="min-w-25 mainLogo__title--cardoFont self-center text-2xl font-semibold whitespace-nowrap text-white">The
               SevenDeuce Club</span>
           </a>
         </div>
-        <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 md:ml-10">
+        <div class="flex justify-center sm:grid-cols-3 md:mx-10 space-x-15">
           <div>
             <h3 class="mb-6 text-sm font-semibold uppercase text-[#04a199]">Nous joindre</h3>
             <ul class="text-gray-200 font-medium space-y-2">

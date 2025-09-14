@@ -131,7 +131,7 @@
     <div class="h-[2px] w-[90%] bg-gradient-to-r from-white/0 via-white/50 to-white/0 my-8 mx-auto"></div>
 
     <section id="regles-base"
-      class="scroll-mt-50 grid grid-cols-12 gap-6 w-[95%] md:w-[90%] max-w-6xl m-auto my-15 px-4 text-white">
+      class="scroll-mt-50 grid grid-cols-12 gap-6 w-[100%] md:w-[90%] max-w-6xl m-auto my-15 px-4 text-white">
       <div class="col-span-12 flex flex-col items-center space-y-4 mb-8">
         <div class="flex items-center justify-center gap-3">
           <img src="../assets/images/logo/spade.png" alt="Symbole de pique"
@@ -149,7 +149,7 @@
       </div>
 
       <div
-        class="col-span-12 md:col-span-10 md:col-start-2 text-left md:text-center xl:text-left xl:col-span-4 bg-black rounded-2xl p-6 shadow-lg hover:scale-[1.02] transition-transform">
+        class="col-span-12 md:col-span-10 md:col-start-2 text-left md:text-center xl:text-left xl:col-span-4 xl:col-start-3 bg-black rounded-2xl p-6 shadow-lg hover:scale-[1.02] transition-transform">
         <div class="inline-flex items-center justify-center gap-2 mb-4 w-full">
           <img src="../assets/images/logo/heart.png" alt="Symbole de coeur" class="w-7 h-7" />
           <h3 class="text-xl font-semibold text-white text-center">Structure d'une Main</h3>
@@ -210,207 +210,161 @@
         </ul>
       </div>
 
-      <div
-        class="col-span-12 md:col-span-10 md:col-start-2 text-left md:text-center xl:text-left xl:col-span-4 bg-black rounded-2xl p-6 shadow-lg hover:scale-[1.02] transition-transform">
-        <div class="inline-flex items-center justify-center gap-2 mb-4 w-full">
-          <img src="../assets/images/logo/heart.png" alt="Symbole de coeur" class="w-7 h-7" />
-          <h3 class="text-xl font-semibold text-white text-center">Positions à la Table</h3>
-          <img src="../assets/images/logo/diamond.png" alt="Symbole de carreau" class="w-7 h-7" />
-        </div>
-        <ul class="space-y-3 text-gray-300">
-          <li class="max-md:flex max-md:flex-col max-md:text-center"><span
-              class="text-red-600 font-bold max-md:text-xl">Bouton (Dealer) <span class="max-md:hidden">:</span></span>
-            La position la plus avantageuse, parle en
-            dernier.</li>
-          <li class="max-md:flex max-md:flex-col max-md:text-center"><span
-              class="text-red-600 font-bold max-md:text-xl">Blindes <span class="max-md:hidden">:</span></span> Petite
-            et grande blinde - mises forcées avant
-            distribution.</li>
-          <li class="max-md:flex max-md:flex-col max-md:text-center"><span
-              class="text-red-600 font-bold max-md:text-xl">Early Position <span class="max-md:hidden">:</span></span>
-            Premiers à parler, position défavorable.</li>
-          <li class="max-md:flex max-md:flex-col max-md:text-center"><span
-              class="text-red-600 font-bold max-md:text-xl">Middle Position <span class="max-md:hidden">:</span></span>
-            Position intermédiaire.</li>
-          <li class="max-md:flex max-md:flex-col max-md:text-center"><span
-              class="text-red-600 font-bold max-md:text-xl">Late Position <span class="max-md:hidden">:</span></span>
-            Avant-derniers à parler, position avantageuse.
-          </li>
-        </ul>
-      </div>
       <!-- -------------------Table de poker ----------------------- -->
 
       <div
-        class="relative col-span-10 col-start-2 h-[500px] bg-blue-950 rounded-full border-8 border-black flex items-center justify-center">
+        class="relative col-span-12 col-start-1 md:col-span-10 md:col-start-2 h-[500px] mt-10 bg-blue-950 rounded-full border-8 border-black flex items-center justify-center">
 
         <!-- Joueurs -->
         <div class="absolute w-full h-full flex items-center justify-center">
           <div class="absolute w-full h-full">
             <!-- Player 1 -->
-            <div class="absolute top-[20px] right-[50px] group">
-              <div class="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center text-white">P1</div>
-              <div class="absolute mt-2 hidden group-hover:block
+            <div class="absolute top-[16%] right-[0%] group">
+              <div
+                class="max-[475px]:w-12 max-[475px]:h-12 w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center text-white">
+                P1</div>
+              <div class="z-20 right-0 absolute mt-2 hidden group-hover:block
                       bg-black text-white text-xs rounded p-2 shadow-lg w-50 flex-col text-center">
                 <h3 class="font-bold mb-1">Dealer</h3>
                 <p>La position la plus avantageuse, parle en dernier après le flop.</p>
               </div>
             </div>
             <!-- Player 2 -->
-            <div class="absolute top-[210px] right-[-35px] group">
-              <div class="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center text-white">P2</div>
-              <div class="absolute mt-2 hidden group-hover:block
+            <div class="absolute bottom-[16%] right-[0%] group">
+              <div
+                class="max-[475px]:w-12 max-[475px]:h-12 w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center text-white">
+                P2</div>
+              <div class="z-20 right-0 absolute mt-2 hidden group-hover:block
                       bg-black text-white text-xs rounded p-2 shadow-lg w-50 flex-col text-center">
-                <h3 class="font-bold mb-1">Dealer</h3>
-                <p>La position la plus avantageuse, parle en dernier après le flop.</p>
+                <h3 class="font-bold mb-1">Small blind</h3>
+                <p>Le joueur assis immédiatement à gauche du bouton (dealer). Il met la petite mise forcée.</p>
               </div>
             </div>
             <!-- Player 3 -->
-            <div class="absolute top-[400px] right-[50px] group">
-              <div class="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center text-white">P3</div>
-              <div class="absolute mt-2 hidden group-hover:block
+            <div class="max-[475px]:bottom-[-4%] max-[475px]:right-[43%] absolute bottom-[-7%] left-[45%] group">
+              <div
+                class="max-[475px]:w-12 max-[475px]:h-12 w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center text-white">
+                P3</div>
+              <div class="z-20 left-[-72px] absolute mt-2 hidden group-hover:block
                       bg-black text-white text-xs rounded p-2 shadow-lg w-50 flex-col text-center">
-                <h3 class="font-bold mb-1">Dealer</h3>
-                <p>La position la plus avantageuse, parle en dernier après le flop.</p>
+                <h3 class="font-bold mb-1">Big blind</h3>
+                <p>Le joueur à gauche du small blind. Il met la grosse mise forcée.</p>
               </div>
             </div>
 
             <!-- Player 4 -->
-            <div class="absolute bottom-[-30px] right-[280px] group">
-              <div class="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center text-white">P4</div>
-              <div class="absolute mt-2 hidden group-hover:block
+            <div class="absolute bottom-[16%] left-[0%] group">
+              <div
+                class="max-[475px]:w-12 max-[475px]:h-12 w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center text-white">
+                P4</div>
+              <div class="z-20 absolute mt-2 hidden group-hover:block
                       bg-black text-white text-xs rounded p-2 shadow-lg w-50 flex-col text-center">
-                <h3 class="font-bold mb-1">Dealer</h3>
-                <p>La position la plus avantageuse, parle en dernier après le flop.</p>
+                <h3 class="font-bold mb-1">UTG (Under The Gun)</h3>
+                <p>Premiers joueur à parler après les blinds. Il est le joueur le plus en désavantage car il doit agir
+                  en premier sans informations sur les autres joeurs.</p>
               </div>
             </div>
             <!-- Player 5 -->
-            <div class="absolute bottom-[-30px] left-[280px] group">
-              <div class="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center text-white">P5</div>
-              <div class="absolute mt-2 hidden group-hover:block
+            <div class="absolute top-[16%] left-[0%] group">
+              <div
+                class="max-[475px]:w-12 max-[475px]:h-12 w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center text-white">
+                P5</div>
+              <div class="z-20 absolute mt-2 hidden group-hover:block
                       bg-black text-white text-xs rounded p-2 shadow-lg w-50 flex-col text-center">
-                <h3 class="font-bold mb-1">Dealer</h3>
-                <p>La position la plus avantageuse, parle en dernier après le flop.</p>
+                <h3 class="font-bold mb-1">Middle Position</h3>
+                <p>Les joueurs qui parlent après l'early position, mais avant les dernières positions.</p>
               </div>
             </div>
             <!-- Player 6 -->
-            <div class="absolute top-[400px] left-[50px] group">
-              <div class="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center text-white">P6</div>
-              <div class="absolute mt-2 hidden group-hover:block
+            <div class="max-[475px]:top-[-4%] max-[475px]:right-[43%] absolute top-[-7%] right-[45%]  group">
+              <div
+                class="max-[475px]:w-12 max-[475px]:h-12 w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center text-white">
+                P6</div>
+              <div class="z-20 left-[-72px] absolute mt-2 hidden group-hover:block
                       bg-black text-white text-xs rounded p-2 shadow-lg w-50 flex-col text-center">
-                <h3 class="font-bold mb-1">Dealer</h3>
-                <p>La position la plus avantageuse, parle en dernier après le flop.</p>
+                <h3 class="font-bold mb-1">Cutoff</h3>
+                <p>Dernière position avant le dealer. Énorme avantage stratégique car on agit après la majorité des
+                  joueurs.</p>
               </div>
             </div>
-            <!-- Player 7 -->
-            <div class="absolute top-[210px] left-[-35px] group">
-              <div class="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center text-white">P7</div>
-              <div class="absolute mt-2 hidden group-hover:block
-                      bg-black text-white text-xs rounded p-2 shadow-lg w-50 flex-col text-center">
-                <h3 class="font-bold mb-1">Dealer</h3>
-                <p>La position la plus avantageuse, parle en dernier après le flop.</p>
-              </div>
-            </div>
-            <!-- Player 8 -->
-            <div class="absolute top-[20px] left-[50px] group">
-              <div class="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center text-white">P8</div>
-              <div class="absolute mt-2 hidden group-hover:block
-                      bg-black text-white text-xs rounded p-2 shadow-lg w-50 flex-col text-center">
-                <h3 class="font-bold mb-1">Dealer</h3>
-                <p>La position la plus avantageuse, parle en dernier après le flop.</p>
-              </div>
-            </div>
-            <!-- Player 9 -->
-            <div class="absolute top-[-30px] left-[425px] group">
-              <div class="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center text-white">P9</div>
-              <div class="absolute mt-2 hidden group-hover:block
-                      bg-black text-white text-xs rounded p-2 shadow-lg w-50 flex-col text-center">
-                <h3 class="font-bold mb-1">Dealer</h3>
-                <p>La position la plus avantageuse, parle en dernier après le flop.</p>
-              </div>
-            </div>
-
-            <!-- Jetons -->
-            <div class="absolute top-[90px] right-[120px]  flex flex-col items-center group">
+            <!----------- Jetons ------------>
+            <!-- Dealer -->
+            <div class="absolute top-[27%] right-[12%]  flex flex-col items-center group">
               <div
                 class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-black text-[0.8rem] font-bold border-black border-1">
                 Dealer</div>
-              <div class="absolute top-12 mt-2 hidden group-hover:block
+              <div class="z-20 right-0 absolute top-12 mt-2 hidden group-hover:block
                       bg-black text-white text-xs rounded p-2 shadow-lg w-50 flex-col text-center">
-                <h3 class="font-bold mb-1">Dealer</h3>
-                <p>La position la plus avantageuse, parle en dernier après le flop.</p>
+                <h3 class="font-bold mb-1">Bouton Dealer</h3>
+                <p>Identifie le jouer en position de Dealer</p>
               </div>
             </div>
             <!-- Small Blind -->
-            <div class="absolute top-[225px] right-[50px] flex flex-col items-center group">
+            <div class="absolute bottom-[27%] right-[12%] flex flex-col items-center group">
               <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs">SB
               </div>
               <span class="text-white text-xs mt-1">$50</span>
-              <div class="absolute top-10 mt-2 hidden group-hover:block
+              <div class="z-20 right-0 absolute top-10 mt-2 hidden group-hover:block
                       bg-black text-white text-xs rounded p-2 shadow-lg w-50 flex-col text-center">
-                <h3 class="font-bold mb-1">Dealer</h3>
-                <p>La position la plus avantageuse, parle en dernier après le flop.</p>
+                <h3 class="font-bold mb-1">Small blind</h3>
+                <p>Mise forcée avant
+                  distribution.</p>
               </div>
             </div>
             <!-- Big Blind -->
-            <div class="absolute top-[350px] right-[120px]  flex flex-col items-center group">
+            <div class="absolute bottom-[12%] left-[47%]  flex flex-col items-center group">
               <div class="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center text-white text-xs">BB
               </div>
               <span class="text-white text-xs mt-1">$100</span>
               <div class="absolute top-10 mt-2 hidden group-hover:block
                       bg-black text-white text-xs rounded p-2 shadow-lg w-50 flex-col text-center">
-                <h3 class="font-bold mb-1">Dealer</h3>
-                <p>La position la plus avantageuse, parle en dernier après le flop.</p>
+                <h3 class="font-bold mb-1">Big blind</h3>
+                <p>Mise forcée avant
+                  distribution.</p>
               </div>
             </div>
 
             <!-- Raise -->
-            <div class="absolute top-[385px] right-[290px] flex flex-col items-center group">
+            <div class="absolute bottom-[27%] left-[12%] flex flex-col items-center group">
               <div class="w-10 h-10 bg-purple-700 rounded-full flex items-center justify-center text-white text-xs">
                 Raise
               </div>
               <span class="text-white text-xs mt-1">$400</span>
-              <div class="absolute top-10 mt-2 hidden group-hover:block
+              <div class="z-20 left-0 absolute top-10 mt-2 hidden group-hover:block
                       bg-black text-white text-xs rounded p-2 shadow-lg w-50 flex-col text-center">
-                <h3 class="font-bold mb-1">Dealer</h3>
-                <p>La position la plus avantageuse, parle en dernier après le flop.</p>
+                <h3 class="font-bold mb-1">Raise</h3>
+                <p>Augmente la mise en cours plutôt que de simplement suivre (call) ou se coucher (fold).</p>
               </div>
             </div>
             <!-- Call -->
-            <div class="absolute top-[385px] left-[290px]  flex flex-col items-center group">
+            <div class="absolute top-[27%] left-[12%]  flex flex-col items-center group">
               <div class="w-10 h-10 bg-purple-950 rounded-full flex items-center justify-center text-white text-xs">Call
               </div>
               <span class="text-white text-xs mt-1">$400</span>
-              <div class="absolute top-10 mt-2 hidden group-hover:block
+              <div class="z-20 left-0 absolute top-10 mt-2 hidden group-hover:block
                       bg-black text-white text-xs rounded p-2 shadow-lg w-50 flex-col text-center">
-                <h3 class="font-bold mb-1">Dealer</h3>
-                <p>La position la plus avantageuse, parle en dernier après le flop.</p>
+                <h3 class="font-bold mb-1">Call</h3>
+                <p>Égaler la mise la plus élevée du tour en cours pour rester dans la main.</p>
               </div>
             </div>
             <!-- Cartes au centre -->
-            <div class="absolute top-[190px] left-[275px] flex space-x-2">
+            <div class="absolute top-[40%] left-[12%] w-[80%] flex justify-center flex space-x-2">
               <div class="flex gap-1 group">
-                <div class="w-16 h-24 bg-white border border-gray-400 rounded"></div>
-                <div class="w-16 h-24 bg-white border border-gray-400 rounded"></div>
-                <div class="w-16 h-24 bg-white border border-gray-400 rounded"></div>
-                <div class="absolute top-25 mt-2 hidden group-hover:block
-                      bg-black text-white text-xs rounded p-2 shadow-lg w-50 flex-col text-center">
-                  <h3 class="font-bold mb-1">Dealer</h3>
-                  <p>La position la plus avantageuse, parle en dernier après le flop.</p>
+                <div class="w-8 h-12 xl:h-24 bg-white border border-gray-400 rounded">
                 </div>
-              </div>
-
-              <div class="w-16 h-24 bg-white border border-gray-400 rounded group">
-                <div class="absolute top-25 mt-2 hidden group-hover:block
-                      bg-black text-white text-xs rounded p-2 shadow-lg w-50 flex-col text-center">
-                  <h3 class="font-bold mb-1">Dealer</h3>
-                  <p>La position la plus avantageuse, parle en dernier après le flop.</p>
+                <div class="w-8 h-12 xl:h-24 bg-white border border-gray-400 rounded">
                 </div>
-              </div>
-              <div class="w-16 h-24 bg-white border border-gray-400 rounded group">
-                <div class="absolute top-25 mt-2 hidden group-hover:block
+                <div class="w-8 h-12 xl:h-24 bg-white border border-gray-400 rounded flex justify-center">
+                  <div class="z-20 absolute top-12 mt-2 hidden group-hover:block
                       bg-black text-white text-xs rounded p-2 shadow-lg w-50 flex-col text-center">
-                  <h3 class="font-bold mb-1">Dealer</h3>
-                  <p>La position la plus avantageuse, parle en dernier après le flop.</p>
+                    <h3 class="font-bold mb-1">Le Board</h3>
+                    <p>Cartes communes pour tous les joueurs.</p>
+                    <p>Le flop (3 premières cartes), la turn et ensuite la river</p>
+                  </div>
+                </div>
+                <div class="w-8 h-12 xl:h-24 bg-white border border-gray-400 rounded group">
+                </div>
+                <div class="w-8 h-12 xl:h-24 bg-white border border-gray-400 rounded group">
                 </div>
               </div>
             </div>
@@ -562,90 +516,214 @@
             class="w-8 h-8 md:w-10 md:h-10 drop-shadow-[1px_1px_8px_white]" />
         </div>
         <p class="text-gray-200 text-xl max-w-2xl text-center">
-          Maîtrisez le vocabulaire essentiel pour parler poker comme un professionnel.
+          Maîtrisez le vocabulaire essentiel en anglais pour parler poker comme un professionnel.
         </p>
       </div>
 
-      <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-black rounded-2xl p-6 shadow-lg">
-        <div class="inline-flex items-center justify-center gap-2 mb-4 w-full">
-          <img src="../assets/images/logo/heart.png" alt="Symbole de coeur" class="w-7 h-7" />
-          <h3 class="text-xl font-semibold text-white text-center">Termes de Base</h3>
-          <img src="../assets/images/logo/diamond.png" alt="Symbole de carreau" class="w-7 h-7" />
-        </div>
-        <dl class="space-y-4">
-          <div>
-            <dt class="text-red-600 font-bold">Blinde</dt>
-            <dd class="text-gray-300 pl-4">Mise forcée que doivent payer certains joueurs avant la distribution des
-              cartes.</dd>
-          </div>
-          <div>
-            <dt class="text-red-600 font-bold">Button</dt>
-            <dd class="text-gray-300 pl-4">Marqueur indiquant le donneur fictif, qui a la position la plus avantageuse.
-            </dd>
-          </div>
-          <div>
-            <dt class="text-red-600 font-bold">Pot</dt>
-            <dd class="text-gray-300 pl-4">Total des mises que les joueurs se disputent durant une main.</dd>
-          </div>
-          <div>
-            <dt class="text-red-600 font-bold">Tapis</dt>
-            <dd class="text-gray-300 pl-4">Miser toutes ses jetons restants en une seule fois.</dd>
-          </div>
-        </dl>
-      </div>
+<div class="col-span-12 md:col-span-6 xl:col-span-4 bg-black rounded-2xl p-6 shadow-lg">
+  <div class="inline-flex items-center justify-center gap-2 mb-4 w-full">
+    <img src="../assets/images/logo/heart.png" alt="Symbole de coeur" class="w-7 h-7" />
+    <h3 class="text-xl font-semibold text-white text-center">Actions</h3>
+    <img src="../assets/images/logo/diamond.png" alt="Symbole de carreau" class="w-7 h-7" />
+  </div>
+  <dl class="space-y-4">
+    <div>
+      <dt class="text-red-600 font-bold">Fold</dt>
+      <dd class="text-gray-300 pl-4">Se coucher, abandonner la main et ses mises en cours.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">Check</dt>
+      <dd class="text-gray-300 pl-4">Passer, rester dans la main sans miser.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">Call</dt>
+      <dd class="text-gray-300 pl-4">Suivre, égaler la mise pour rester dans la main.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">Bet</dt>
+      <dd class="text-gray-300 pl-4">Miser, placer la première mise d’un tour.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">Raise</dt>
+      <dd class="text-gray-300 pl-4">Relancer, augmenter la mise actuelle.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">All-in</dt>
+      <dd class="text-gray-300 pl-4">Miser tous ses jetons restants.</dd>
+    </div>
+  </dl>
+</div>
 
-      <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-black rounded-2xl p-6 shadow-lg">
-        <div class="inline-flex items-center justify-center gap-2 mb-4 w-full">
-          <img src="../assets/images/logo/heart.png" alt="Symbole de coeur" class="w-7 h-7" />
-          <h3 class="text-xl font-semibold text-white text-center">Actions de Jeu</h3>
-          <img src="../assets/images/logo/diamond.png" alt="Symbole de carreau" class="w-7 h-7" />
-        </div>
-        <dl class="space-y-4">
-          <div>
-            <dt class="text-red-600 font-bold">Check</dt>
-            <dd class="text-gray-300 pl-4">Rester dans le coup sans miser, possible seulement si personne n'a misé
-              avant.</dd>
-          </div>
-          <div>
-            <dt class="text-red-600 font-bold">Call</dt>
-            <dd class="text-gray-300 pl-4">Suivre la mise actuelle pour rester dans le coup.</dd>
-          </div>
-          <div>
-            <dt class="text-red-600 font-bold">Raise</dt>
-            <dd class="text-gray-300 pl-4">Relancer, c'est-à-dire augmenter la mise en cours.</dd>
-          </div>
-          <div>
-            <dt class="text-red-600 font-bold">Fold</dt>
-            <dd class="text-gray-300 pl-4">Se coucher, abandonner la main en cours.</dd>
-          </div>
-        </dl>
-      </div>
+<div class="col-span-12 md:col-span-6 xl:col-span-4 bg-black rounded-2xl p-6 shadow-lg">
+  <div class="inline-flex items-center justify-center gap-2 mb-4 w-full">
+    <img src="../assets/images/logo/heart.png" alt="Symbole de coeur" class="w-7 h-7" />
+    <h3 class="text-xl font-semibold text-white text-center">Positions</h3>
+    <img src="../assets/images/logo/diamond.png" alt="Symbole de carreau" class="w-7 h-7" />
+  </div>
+  <dl class="space-y-4">
+    <div>
+      <dt class="text-red-600 font-bold">Button (BTN)</dt>
+      <dd class="text-gray-300 pl-4">Le donneur, position la plus avantageuse.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">Small Blind (SB)</dt>
+      <dd class="text-gray-300 pl-4">Mise forcée la plus petite.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">Big Blind (BB)</dt>
+      <dd class="text-gray-300 pl-4">Mise forcée plus grande.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">Under The Gun (UTG)</dt>
+      <dd class="text-gray-300 pl-4">Premier joueur à parler après les blinds.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">Cutoff (CO)</dt>
+      <dd class="text-gray-300 pl-4">Juste avant le bouton, position clé.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">Hijack (HJ)</dt>
+      <dd class="text-gray-300 pl-4">Avant le cutoff, encore favorable.</dd>
+    </div>
+  </dl>
+</div>
 
-      <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-black rounded-2xl p-6 shadow-lg">
-        <div class="inline-flex items-center justify-center gap-2 mb-4 w-full">
-          <img src="../assets/images/logo/heart.png" alt="Symbole de coeur" class="w-7 h-7" />
-          <h3 class="text-xl font-semibold text-white text-center">Termes Avancés</h3>
-          <img src="../assets/images/logo/diamond.png" alt="Symbole de carreau" class="w-7 h-7" />
-        </div>
-        <dl class="space-y-4">
-          <div>
-            <dt class="text-red-600 font-bold">Bad Beat</dt>
-            <dd class="text-gray-300 pl-4">Perdre alors qu'on avait une main favorite avant l'abattage.</dd>
-          </div>
-          <div>
-            <dt class="text-red-600 font-bold">Bluff</dt>
-            <dd class="text-gray-300 pl-4">Tenter de faire croire qu'on a une meilleure main que la réalité.</dd>
-          </div>
-          <div>
-            <dt class="text-red-600 font-bold">Tilt</dt>
-            <dd class="text-gray-300 pl-4">État émotionnel où un joueur perd son calme et joue mal.</dd>
-          </div>
-          <div>
-            <dt class="text-red-600 font-bold">Showdown</dt>
-            <dd class="text-gray-300 pl-4">Abattage des cartes pour déterminer le gagnant à la fin d'une main.</dd>
-          </div>
-        </dl>
-      </div>
+<div class="col-span-12 md:col-span-6 xl:col-span-4 bg-black rounded-2xl p-6 shadow-lg">
+  <div class="inline-flex items-center justify-center gap-2 mb-4 w-full">
+    <img src="../assets/images/logo/heart.png" alt="Symbole de coeur" class="w-7 h-7" />
+    <h3 class="text-xl font-semibold text-white text-center">Types de mains</h3>
+    <img src="../assets/images/logo/diamond.png" alt="Symbole de carreau" class="w-7 h-7" />
+  </div>
+  <dl class="space-y-4">
+    <div>
+      <dt class="text-red-600 font-bold">Pocket Pair</dt>
+      <dd class="text-gray-300 pl-4">Deux cartes identiques en main.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">Suited</dt>
+      <dd class="text-gray-300 pl-4">Deux cartes de la même couleur.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">Offsuit</dt>
+      <dd class="text-gray-300 pl-4">Deux cartes de couleurs différentes.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">Connector</dt>
+      <dd class="text-gray-300 pl-4">Deux cartes consécutives.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">Suited Connector</dt>
+      <dd class="text-gray-300 pl-4">Deux cartes consécutives de la même couleur.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">Overcards</dt>
+      <dd class="text-gray-300 pl-4">Cartes supérieures aux cartes du flop.</dd>
+    </div>
+  </dl>
+</div>
+
+<div class="col-span-12 md:col-span-6 xl:col-span-4 bg-black rounded-2xl p-6 shadow-lg">
+  <div class="inline-flex items-center justify-center gap-2 mb-4 w-full">
+    <img src="../assets/images/logo/heart.png" alt="Symbole de coeur" class="w-7 h-7" />
+    <h3 class="text-xl font-semibold text-white text-center">Tours de mise</h3>
+    <img src="../assets/images/logo/diamond.png" alt="Symbole de carreau" class="w-7 h-7" />
+  </div>
+  <dl class="space-y-4">
+    <div>
+      <dt class="text-red-600 font-bold">Preflop</dt>
+      <dd class="text-gray-300 pl-4">Phase avant le dévoilement du flop.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">Flop</dt>
+      <dd class="text-gray-300 pl-4">Les trois premières cartes communes.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">Turn</dt>
+      <dd class="text-gray-300 pl-4">La quatrième carte commune.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">River</dt>
+      <dd class="text-gray-300 pl-4">La cinquième et dernière carte commune.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">Showdown</dt>
+      <dd class="text-gray-300 pl-4">Abattage des cartes pour désigner le vainqueur.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">Side Pot</dt>
+      <dd class="text-gray-300 pl-4">Pot séparé créé quand un joueur est all-in.</dd>
+    </div>
+  </dl>
+</div>
+
+<div class="col-span-12 md:col-span-6 xl:col-span-4 bg-black rounded-2xl p-6 shadow-lg">
+  <div class="inline-flex items-center justify-center gap-2 mb-4 w-full">
+    <img src="../assets/images/logo/heart.png" alt="Symbole de coeur" class="w-7 h-7" />
+    <h3 class="text-xl font-semibold text-white text-center">Stratégies</h3>
+    <img src="../assets/images/logo/diamond.png" alt="Symbole de carreau" class="w-7 h-7" />
+  </div>
+  <dl class="space-y-4">
+    <div>
+      <dt class="text-red-600 font-bold">Bluff</dt>
+      <dd class="text-gray-300 pl-4">Miser avec une main faible pour faire coucher.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">Semi-bluff</dt>
+      <dd class="text-gray-300 pl-4">Bluff avec une main qui peut encore s’améliorer.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">Value Bet</dt>
+      <dd class="text-gray-300 pl-4">Miser avec une main forte pour être payé.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">Slowplay</dt>
+      <dd class="text-gray-300 pl-4">Jouer passif avec une main forte pour piéger.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">C-bet</dt>
+      <dd class="text-gray-300 pl-4">Miser au flop après avoir relancé preflop.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">Check-raise</dt>
+      <dd class="text-gray-300 pl-4">Passer puis relancer après une mise adverse.</dd>
+    </div>
+  </dl>
+</div>
+
+<div class="col-span-12 md:col-span-6 xl:col-span-4 bg-black rounded-2xl p-6 shadow-lg">
+  <div class="inline-flex items-center justify-center gap-2 mb-4 w-full">
+    <img src="../assets/images/logo/heart.png" alt="Symbole de coeur" class="w-7 h-7" />
+    <h3 class="text-xl font-semibold text-white text-center">Probabilités</h3>
+    <img src="../assets/images/logo/diamond.png" alt="Symbole de carreau" class="w-7 h-7" />
+  </div>
+  <dl class="space-y-4">
+    <div>
+      <dt class="text-red-600 font-bold">Outs</dt>
+      <dd class="text-gray-300 pl-4">Cartes pouvant améliorer ta main.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">Pot Odds</dt>
+      <dd class="text-gray-300 pl-4">Rapport entre le pot et la mise à payer.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">Implied Odds</dt>
+      <dd class="text-gray-300 pl-4">Gains potentiels futurs si tu touches ta main.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">Equity</dt>
+      <dd class="text-gray-300 pl-4">Probabilité de gagner la main.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">Expected Value (EV)</dt>
+      <dd class="text-gray-300 pl-4">Gain moyen théorique d’une décision.</dd>
+    </div>
+    <div>
+      <dt class="text-red-600 font-bold">Overbet</dt>
+      <dd class="text-gray-300 pl-4">Mise plus grande que la taille du pot.</dd>
+    </div>
+  </dl>
+</div>
+
     </section>
 
   </main>

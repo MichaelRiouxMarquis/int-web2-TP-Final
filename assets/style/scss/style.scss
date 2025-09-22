@@ -12,12 +12,11 @@
     src: url("../../fonts/Cinzel_Decorative/CinzelDecorative-Regular.ttf");
 }
 
-body {
+body,h3  {
     font-family: "Lato-regular";
 }
 h1,
-h2,
-h3 {
+h2{
     font-family: "Cinzel-regular";
 }
 
@@ -28,3 +27,44 @@ h3 {
         }
     }
 }
+
+.base-strategy {
+  &__card {
+    position: relative;
+    border: 2px solid #000;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      border-radius: 1rem;
+      border: 10px solid transparent;
+      border-image: linear-gradient(90deg, red, transparent, red) 1;
+      border-image-slice: 1;
+      animation: snake 5s linear infinite;
+      pointer-events: none;
+      z-index: 2;
+    }
+  }
+}
+
+@keyframes snake {
+  0% {
+    border-image-source: linear-gradient(90deg, red, transparent, red);
+  }
+  25% {
+    border-image-source: linear-gradient(180deg, rgb(0, 0, 0), transparent, red);
+  }
+  75% {
+    border-image-source: linear-gradient(360deg, rgb(0, 0, 0), transparent, red);
+  }
+  100% {
+    border-image-source: linear-gradient(450deg, red, transparent, red);
+  }
+}
+

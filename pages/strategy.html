@@ -1,38 +1,42 @@
 <!DOCTYPE html>
-<html lang="fr-ca">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <title></title>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
-    <link rel="stylesheet" href="../assets/style/css/style.css" />
-  </head>
+<html lang="fr-ca" class="scroll-smooth">
 
-  <body class="bg-gray-100 text-gray-900">
-    <a href="#main" class="sr-only">Aller au contenu principal</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Stratégies de poker avancées — The SevenDeuce Club. Bases, techniques avancées et ressources membres." />
+  <title>Stratégies - The SevenDeuce Club</title>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+  <link rel="stylesheet" href="../assets/style/css/style.css" />
+  <script src="https://unpkg.com/flowbite@1.8.1/dist/flowbite.js"></script>
+  <link rel="manifest" href="../manifest.json" />
+</head>
+
+<body class="h-full bg-gradient-to-b from-[#0B645A] via-[#002420] to-[#0B645A] text-gray-900">
+  <a href="#main" class="sr-only">Aller au contenu principal</a>
 
   <header class="sticky top-0 z-50">
 
-      <!-- Module tailwind Flowbite -->
+    <!-- Module tailwind Flowbite -->
     <nav class="bg-black fixed w-full z-20 top-0 start-0 border-b border-white">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="/assets/images/logo/poker.png" class="h-30" alt="Flowbite Logo">
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">The SevenDeuce Club</span>
+        <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="../assets/images/logo/poker.png" class="h-30" alt="Flowbite Logo">
+          <span class="mainLogo__title--cardoFont self-center text-2xl font-semibold whitespace-nowrap text-white">The
+            SevenDeuce Club</span>
         </a>
         <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button type="button"
-            class="text-md text-bold text-white bg-red-700 hover:bg-red-800 font-medium rounded-lg px-4 py-2 text-center">Tournament
-            Director</button>
+            class="text-md text-bold text-white bg-red-700 hover:bg-red-800 font-medium rounded-lg px-4 py-2 text-center"
+            onclick="window.location.href='tournamentDirector.html'">
+            Tournament Director
+          </button>
           <button data-collapse-toggle="navbar-sticky" type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
             aria-controls="navbar-sticky" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -45,8 +49,8 @@
           <ul
             class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
             <li>
-              <a href="../index.html"
-                class="block text-lg py-2 px-3 text-white rounded-sm hover:text-red-700 md:p-0"aria-current="page">Accueil</a>
+              <a href="../index.html" class="block text-lg py-2 px-3 text-white rounded-sm hover:text-red-700 md:p-0 "
+                aria-current="page">Accueil</a>
             </li>
             <li>
               <a href="gallery.html"
@@ -58,11 +62,7 @@
             </li>
             <li>
               <a href="strategy.html"
-                class="block text-lg py-2 px-3 text-red-700 rounded-sm hover:text-red-700 md:p-0">stratégies</a>
-            </li>
-            <li>
-              <a href="tournamentInfos.html"
-                class="block text-lg py-2 px-3 text-white rounded-sm hover:text-red-700 md:p-0">Tournois</a>
+                class="block text-lg py-2 px-3 text-red-700 rounded-sm hover:text-red-700 md:p-0">Stratégies</a>
             </li>
           </ul>
         </div>
@@ -71,29 +71,734 @@
 
   </header>
 
-    <main class="mt-20 bg-emerald-950 h-screen">
-      <section class="md:w-[90%] max-w-6xl m-auto grid grid-cols-12">
-        <!-- Stratégies de base
-Quand se coucher / suivre / relancer.
-Importance de la position à table. -->
-      </section>
+  <main id="main" class="mt-38">
+    <section class="relative bg-gradient-to-b from-black via-gray-900 to-black text-white py-16 xl:py-20">
+      <div class="grid grid-cols-12 gap-4 max-w-6xl mx-auto px-4 md:px-6 text-center">
 
-      <section class="md:w-[90%] max-w-6xl m-auto grid grid-cols-12">
-        <!-- Gestion de bankroll
-Conseils pour gérer son argent et éviter de tout perdre. -->
-      </section>
+        <div class="col-span-12 flex items-center justify-center gap-3 md:gap-4 mb-6 md:mb-8 xl:mb-10">
+          <img src="../assets/images/logo/spade.png" alt="Pique"
+            class="w-7 h-7 md:w-8 md:h-8 xl:w-10 xl:h-10 drop-shadow-[1px_1px_8px_white]" />
+          <h1 class="text-[1.8rem] md:text-[2.2rem] xl:text-[3rem] font-bold drop-shadow-[0_0_8px_red]">
+            Stratégies de Poker
+          </h1>
+          <img src="../assets/images/logo/club.png" alt="Trèfle"
+            class="w-7 h-7 md:w-8 md:h-8 xl:w-10 xl:h-10 drop-shadow-[1px_1px_8px_white]" />
+        </div>
 
-      <section class="md:w-[90%] max-w-6xl m-auto grid grid-cols-12">
-        <!-- Lecture des adversaires
-Détection des tells (signaux).
-Jeu psychologique. -->
-      </section>
+        <p
+          class="col-span-12 text-lg md:text-xl xl:text-2xl leading-relaxed max-w-3xl mx-auto text-gray-200 px-2 md:px-0 mb-6 md:mb-8 xl:mb-10">
+          Ce guide rassemble des concepts de stratégie, du jeu de base aux concepts avancés pour t'aider à prendre des
+          décisions plus profitables à la table. Utilise les ancres ci-dessous pour naviguer rapidement.
+        </p>
 
-      <section class="md:w-[90%] max-w-6xl m-auto grid grid-cols-12">
-        <!-- Vidéo de formation en ligne -->
-      </section>
-    </main>
+        <div class="col-span-12 flex items-center justify-center gap-2 md:gap-3 mb-4 md:mb-6 xl:mb-8">
+          <img src="../assets/images/logo/heart.png" alt="Coeur" class="w-5 h-5 md:w-6 md:h-6 xl:w-7 xl:h-7" />
+          <h2 class="text-[1.3rem] md:text-[1.5rem] xl:text-[1.8rem] font-bold drop-shadow-[0_0_8px_red]">
+            Contenu de cette page
+          </h2>
+          <img src="../assets/images/logo/diamond.png" alt="Carreau" class="w-5 h-5 md:w-6 md:h-6 xl:w-7 xl:h-7" />
+        </div>
 
-    <footer class="mt-20 mb-10 grid grid-cols-12"></footer>
-  </body>
+        <ul class="col-span-12 grid grid-cols-12 gap-4 md:gap-6 text-base md:text-lg text-gray-300">
+          <li
+            class="col-span-12 md:col-span-6 xl:col-span-4 bg-gray-800/50 p-4 md:p-5 rounded-xl md:rounded-2xl shadow-md hover:bg-gray-700/50 transition-colors duration-300 text-left md:text-center">
+            <a href="#strategie-base" class="block">
+              <span class="font-semibold text-white">Stratégie de base</span><br />
+              <span class="text-sm md:text-base">Hands, position, et principes preflop</span>
+            </a>
+          </li>
+          <li
+            class="col-span-12 md:col-span-6 xl:col-span-4 bg-gray-800/50 p-4 md:p-5 rounded-xl md:rounded-2xl shadow-md hover:bg-gray-700/50 transition-colors duration-300 text-left md:text-center">
+            <a href="#strategie-avancee" class="block">
+              <span class="font-semibold text-white">Stratégie avancée</span><br />
+              <span class="text-sm md:text-base">Techniques, exploitations et exercices</span>
+            </a>
+          </li>
+          <li
+            class="col-span-12 md:col-span-6 md:col-start-4 xl:col-span-4 bg-gray-800/50 p-4 md:p-5 rounded-xl md:rounded-2xl shadow-md hover:bg-gray-700/50 transition-colors duration-300 text-left md:text-center">
+            <a href="#membres" class="block">
+              <span class="font-semibold text-white">Espace Membres</span><br />
+              <span class="text-sm md:text-base">Contenu premium et outils</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="h-[2px] w-[90%] bg-gradient-to-r from-white/0 via-white/50 to-white/0 my-8 mx-auto"></div>
+
+    <section id="strategie-base"
+      class="base-strategy scroll-mt-50 grid grid-cols-12 gap-6 w-[100%] md:w-[90%] max-w-6xl m-auto my-15 px-4 text-white">
+
+      <div class="col-span-12 flex flex-col items-center space-y-4 mb-8 base-strategy__header">
+        <div class="base-strategy__title flex items-center justify-center gap-3">
+          <img src="../assets/images/logo/spade.png" alt="Symbole de pique"
+            class="w-8 h-8 md:w-10 md:h-10 drop-shadow-[1px_1px_8px_white]" />
+          <h2
+            class="text-[1.5rem] md:text-[1.8rem] xl:text-[2rem] text-center text-white drop-shadow-[0_0_8px_red] font-bold md:whitespace-nowrap">
+            Stratégie de Base</h2>
+          <img src="../assets/images/logo/club.png" alt="Symbole de trèfle"
+            class="w-8 h-8 md:w-10 md:h-10 drop-shadow-[1px_1px_8px_white]" />
+        </div>
+        <p class="base-strategy__intro text-gray-200 text-xl max-w-2xl text-center">
+          Les principes fondamentaux pour construire une base solide : sélection de mains, importance de la position,
+          gestion de bankroll, et principes d'enchères.
+        </p>
+      </div>
+
+      <div class="col-span-12 md:col-span-10 md:col-start-2 grid grid-cols-12 gap-6 base-strategy__cards">
+
+        <div class="col-span-12 xl:col-span-4 col-start-1 base-strategy__card animated-border">
+          <div class="bg-black rounded-2xl p-6 shadow-lg xl:h-[320px]">
+            <div class="base-strategy__card-title inline-flex items-center justify-center gap-2 mb-4 w-full">
+              <img src="../assets/images/logo/heart.png" alt="Symbole de coeur" class="w-7 h-7" />
+              <h3 class="text-xl font-semibold text-white text-center">Sélection de mains</h3>
+              <img src="../assets/images/logo/diamond.png" alt="Symbole de carreau" class="w-7 h-7" />
+            </div>
+            <p class="text-gray-300">Priorise les paires, suited connectors en late position, et évite les mains
+              marginales en early position.</p>
+            <ul class="mt-3 text-gray-300 space-y-2">
+              <li><span class="text-red-600 font-bold">UTG:</span> JJ+, AQs+.</li>
+              <li><span class="text-red-600 font-bold">MP:</span> TT+, AQ+, KQ.</li>
+              <li><span class="text-red-600 font-bold">CO/BTN:</span> élargis avec suited connectors et broadways.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-span-12 xl:col-span-4 base-strategy__card animated-border" id="card-pos">
+          <div class="bg-black rounded-2xl p-6 shadow-lg xl:h-[320px]">
+            <div class="base-strategy__card-title inline-flex items-center justify-center gap-2 mb-4 w-full">
+              <img src="../assets/images/logo/heart.png" alt="Symbole de coeur" class="w-7 h-7" />
+              <h3 class="text-xl font-semibold text-white text-center">Importance de la position</h3>
+              <img src="../assets/images/logo/diamond.png" alt="Symbole de carreau" class="w-7 h-7" />
+            </div>
+            <p class="text-gray-300">Jouer en position te donne l'avantage informationnel. Adapte ta stratégie : joue
+              plus large en late position et serre en early.</p>
+            <p class="mt-3 text-gray-300">Exerce-toi à voler les blinds depuis le bouton et le cutoff quand les stacks
+              le permettent.</p>
+          </div>
+        </div>
+
+        <div class="col-span-12 xl:col-span-4 base-strategy__card animated-border">
+          <div class="bg-black rounded-2xl p-6 shadow-lg xl:h-[320px]">
+            <div class="base-strategy__card-title inline-flex items-center justify-center gap-2 mb-4 w-full">
+              <img src="../assets/images/logo/heart.png" alt="Symbole de coeur" class="w-7 h-7" />
+              <h3 class="text-xl font-semibold text-white text-center">Gestion de Bankroll</h3>
+              <img src="../assets/images/logo/diamond.png" alt="Symbole de carreau" class="w-7 h-7" />
+            </div>
+            <p class="text-gray-300">Respecte des règles strictes (ex: 20-50 buy-ins selon la variance) et ajuste ta
+              taille de mise selon ton niveau et la structure du tournoi/cash.</p>
+            <p class="mt-3 text-gray-300">Ne chase pas les pertes — prends des pauses et révise tes mains.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="h-[2px] w-[90%] bg-gradient-to-r from-white/0 via-white/50 to-white/0 my-8 mx-auto"></div>
+
+    <section id="strategie-avancee"
+      class="scroll-mt-50 grid grid-cols-12 gap-6 md:w-[90%] max-w-6xl my-15 md:mx-auto mx-[5px] text-white px-4">
+
+      <div class="col-span-12 flex flex-col items-center space-y-4 mb-8">
+        <div class="flex items-center justify-center gap-3">
+          <img src="../assets/images/logo/spade.png" alt="Symbole de pique"
+            class="w-8 h-8 md:w-10 md:h-10 drop-shadow-[1px_1px_8px_white]" />
+          <h2
+            class="text-[1.5rem] md:text-[1.8rem] xl:text-[2rem] text-center text-white drop-shadow-[0_0_8px_red] font-bold md:whitespace-nowrap">
+            Stratégies Avancées</h2>
+          <img src="../assets/images/logo/club.png" alt="Symbole de trèfle"
+            class="w-8 h-8 md:w-10 md:h-10 drop-shadow-[1px_1px_8px_white]" />
+        </div>
+        <p class="text-gray-200 text-xl max-w-2xl text-center">
+          Ensemble de concepts à travailler : exploitations, spots techniques, ajustements GTO vs exploitant, et plus.
+        </p>
+      </div>
+
+      <div class="col-span-12 md:col-span-10 md:col-start-2">
+        <div class="flex xl:flex-row flex-col space-x-2" id="accordion-collapse" data-accordion="collapse">
+          <div class="xl:w-[49%] gap-2 flex flex-col ">
+            <!-- 1 -->
+            <div class="w-full">
+              <h2 id="accordion-heading-1">
+                <button type="button"
+                  class="flex items-center justify-between w-full p-4 font-medium text-left bg-[rgba(0,0,0,0.6)] p-2 rounded-2xl"
+                  data-accordion-target="#accordion-body-1" aria-expanded="false" aria-controls="accordion-body-1">
+                  <span class="text-white font-semibold">3-bet light (concept & exécution)</span>
+                  <svg data-accordion-icon class="w-6 h-6 rotate-0 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-body-1" class="hidden" aria-labelledby="accordion-heading-1">
+                <div class="p-4 text-gray-300 border border-gray-700 rounded-b-lg bg-black/40">
+                </div> Utiliser le 3-bet light pour voler des pots préflop contre des open-raises de faible fréquence.
+                Choisir
+                les spots: villain passif, fréquences de steal faibles, et effective stacks suffisants. Garde un plan
+                postflop.
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="w-full">
+              <h2 id="accordion-heading-2">
+                <button type="button"
+                  class="flex items-center justify-between w-full p-4 font-medium text-left bg-[rgba(0,0,0,0.6)] p-2 rounded-2xl"
+                  data-accordion-target="#accordion-body-2" aria-expanded="false" aria-controls="accordion-body-2">
+                  <span class="text-white font-semibold">C-bet sizing & textures de board</span>
+                  <svg data-accordion-icon class="w-6 h-6 rotate-0 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-body-2" class="hidden" aria-labelledby="accordion-heading-2">
+                <div class="p-4 text-gray-300 border border-gray-700 rounded-b-lg bg-black/40">
+                  Adapter ta C-bet selon la texture : faible sizing sur boards secs pour fold equity, sizing plus gros
+                  sur
+                  boards draws pour protection. Prends en compte la gamme perçue.
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="w-full">
+              <h2 id="accordion-heading-3">
+                <button type="button"
+                  class="flex items-center justify-between w-full p-4 font-medium text-left bg-[rgba(0,0,0,0.6)] p-2 rounded-2xl"
+                  data-accordion-target="#accordion-body-3" aria-expanded="false" aria-controls="accordion-body-3">
+                  <span class="text-white font-semibold">Bluff multi-street</span>
+                  <svg data-accordion-icon class="w-6 h-6 rotate-0 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-body-3" class="hidden" aria-labelledby="accordion-heading-3">
+                <div class="p-4 text-gray-300 border border-gray-700 rounded-b-lg bg-black/40">
+                  Construire des bluffs sur plusieurs rues nécessite cohérence entre range showdown et line: blockers,
+                  story-telling et sizing progressif. Ne pas over-bluff contre joueurs qui call-down trop souvent.
+                </div>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="w-full">
+              <h2 id="accordion-heading-4">
+                <button type="button"
+                  class="flex items-center justify-between w-full p-4 font-medium text-left bg-[rgba(0,0,0,0.6)] p-2 rounded-2xl"
+                  data-accordion-target="#accordion-body-4" aria-expanded="false" aria-controls="accordion-body-4">
+                  <span class="text-white font-semibold">Exploitation des fishs</span>
+                  <svg data-accordion-icon class="w-6 h-6 rotate-0 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-body-4" class="hidden" aria-labelledby="accordion-heading-4">
+                <div class="p-4 text-gray-300 border border-gray-700 rounded-b-lg bg-black/40">
+                  Simplifier contre de mauvais joueurs : value bet plus thin, éviter bluffs compliqués, et maximiser la
+                  pression postflop quand ils montrent faiblesse.
+                </div>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div class="w-full">
+              <h2 id="accordion-heading-5">
+                <button type="button"
+                  class="flex items-center justify-between w-full p-4 font-medium text-left bg-[rgba(0,0,0,0.6)] p-2 rounded-2xl"
+                  data-accordion-target="#accordion-body-5" aria-expanded="false" aria-controls="accordion-body-5">
+                  <span class="text-white font-semibold">Game theory optimal (GTO) — principes</span>
+                  <svg data-accordion-icon class="w-6 h-6 rotate-0 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-body-5" class="hidden" aria-labelledby="accordion-heading-5">
+                <div class="p-4 text-gray-300 border border-gray-700 rounded-b-lg bg-black/40">
+                  Comprendre les idées GTO : équilibrer range, fréquences, et sizing pour être moins exploitable.
+                  Utiliser
+                  GTO comme référence et t'adapter quand tu identifies des patterns adverses.
+                </div>
+              </div>
+            </div>
+            <!-- 6 -->
+            <div class="w-full">
+              <h2 id="accordion-heading-6">
+                <button type="button"
+                  class="flex items-center justify-between w-full p-4 font-medium text-left bg-[rgba(0,0,0,0.6)] p-2 rounded-2xl"
+                  data-accordion-target="#accordion-body-6" aria-expanded="false" aria-controls="accordion-body-6">
+                  <span class="text-white font-semibold">Polarised vs merged bet sizing</span>
+                  <svg data-accordion-icon class="w-6 h-6 rotate-0 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-body-6" class="hidden" aria-labelledby="accordion-heading-6">
+                <div class="p-4 text-gray-300 border border-gray-700 rounded-b-lg bg-black/40">
+                  Sizing polarisé : petits et très grands sizings pour montrer force ou bluff. Merged : sizings
+                  intermédiaires pour mêler value & bluffs. Choisis selon read et texture.
+                </div>
+              </div>
+            </div>
+            <!-- 7 -->
+            <div class="w-full">
+              <h2 id="accordion-heading-7">
+                <button type="button"
+                  class="flex items-center justify-between w-full p-4 font-medium text-left bg-[rgba(0,0,0,0.6)] p-2 rounded-2xl"
+                  data-accordion-target="#accordion-body-7" aria-expanded="false" aria-controls="accordion-body-7">
+                  <span class="text-white font-semibold">Exploitation des ranges de shove (all-in)</span>
+                  <svg data-accordion-icon class="w-6 h-6 rotate-0 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-body-7" class="hidden" aria-labelledby="accordion-heading-7">
+                <div class="p-4 text-gray-300 border border-gray-700 rounded-b-lg bg-black/40">
+                  Contre short-stack shove, utiliser une stratégie basée sur fold equity et équité. Connaître tes
+                  fold-calls
+                  thresholds selon effective stacks.
+                </div>
+              </div>
+            </div>
+            <!-- 8 -->
+            <div class="w-full">
+              <h2 id="accordion-heading-8">
+                <button type="button"
+                  class="flex items-center justify-between w-full p-4 font-medium text-left bg-[rgba(0,0,0,0.6)] p-2 rounded-2xl"
+                  data-accordion-target="#accordion-body-8" aria-expanded="false" aria-controls="accordion-body-8">
+                  <span class="text-white font-semibold">Iso-play et value vs multiway pots</span>
+                  <svg data-accordion-icon class="w-6 h-6 rotate-0 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-body-8" class="hidden" aria-labelledby="accordion-heading-8">
+                <div class="p-4 text-gray-300 border border-gray-700 rounded-b-lg bg-black/40">
+                  En multiway, réduire bluff frequency, privilégier mains avec bonne équité vs plusieurs adversaires et
+                  iso-play contre limp-heavy tables.
+                </div>
+              </div>
+            </div>
+            <!-- 9 -->
+            <div class="w-full">
+              <h2 id="accordion-heading-9">
+                <button type="button"
+                  class="flex items-center justify-between w-full p-4 font-medium text-left bg-[rgba(0,0,0,0.6)] p-2 rounded-2xl"
+                  data-accordion-target="#accordion-body-9" aria-expanded="false" aria-controls="accordion-body-9">
+                  <span class="text-white font-semibold">Exploiter les tendances de bet/call</span>
+                  <svg data-accordion-icon class="w-6 h-6 rotate-0 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-body-9" class="hidden" aria-labelledby="accordion-heading-9">
+                <div class="p-4 text-gray-300 border border-gray-700 rounded-b-lg bg-black/40">
+                  Observe fréquences de call/raise/fold pour ajuster tes bluffs et tes value-bets. Parfois simplifier ta
+                  stratégie donne un plus grand edge contre joueurs loose-aggressifs.
+                </div>
+              </div>
+            </div>
+            <!-- 10 -->
+            <div class="w-full">
+              <h2 id="accordion-heading-10">
+                <button type="button"
+                  class="flex items-center justify-between w-full p-4 font-medium text-left bg-[rgba(0,0,0,0.6)] p-2 rounded-2xl"
+                  data-accordion-target="#accordion-body-10" aria-expanded="false" aria-controls="accordion-body-10">
+                  <span class="text-white font-semibold">Turn play — sizing et planification</span>
+                  <svg data-accordion-icon class="w-6 h-6 rotate-0 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-body-10" class="hidden" aria-labelledby="accordion-heading-10">
+                <div class="p-4 text-gray-300 border border-gray-700 rounded-b-lg bg-black/40">
+                  Sur la turn, décide early si tu veux construire pot ou protéger. Réévalue equity, outs, et adversaire
+                  —
+                  adapte le sizing pour contrôler le pot.
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="xl:w-[49%] gap-2 flex flex-col">
+            <!-- 11 -->
+            <div class="w-full">
+              <h2 id="accordion-heading-11">
+                <button type="button"
+                  class="flex items-center justify-between w-full p-4 font-medium text-left bg-[rgba(0,0,0,0.6)] p-2 rounded-2xl"
+                  data-accordion-target="#accordion-body-11" aria-expanded="false" aria-controls="accordion-body-11">
+                  <span class="text-white font-semibold">River: value extraction & thin value</span>
+                  <svg data-accordion-icon class="w-6 h-6 rotate-0 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-body-11" class="hidden" aria-labelledby="accordion-heading-11">
+                <div class="p-4 text-gray-300 border border-gray-700 rounded-b-lg bg-black/40">
+                  Extraire de la value sur la river : choisir sizing pour capter tous les calls profitables, utiliser
+                  thin
+                  value contre joueurs trop tight/fold.
+                </div>
+              </div>
+            </div>
+            <!-- 12 -->
+            <div class="w-full">
+              <h2 id="accordion-heading-12">
+                <button type="button"
+                  class="flex items-center justify-between w-full p-4 font-medium text-left bg-[rgba(0,0,0,0.6)] p-2 rounded-2xl"
+                  data-accordion-target="#accordion-body-12" aria-expanded="false" aria-controls="accordion-body-12">
+                  <span class="text-white font-semibold">Outs & equity calculation</span>
+                  <svg data-accordion-icon class="w-6 h-6 rotate-0 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-body-12" class="hidden" aria-labelledby="accordion-heading-12">
+                <div class="p-4 text-gray-300 border border-gray-700 rounded-b-lg bg-black/40">
+                  Calculer ses outs et l'equity pour prendre de meilleures décisions preflop et postflop. Savoir combien
+                  de
+                  cartes améliorent ton main et leur impact sur pot odds.
+                </div>
+              </div>
+            </div>
+            <!-- 13 -->
+            <div class="w-full">
+              <h2 id="accordion-heading-13">
+                <button type="button"
+                  class="flex items-center justify-between w-full p-4 font-medium text-left bg-[rgba(0,0,0,0.6)] p-2 rounded-2xl"
+                  data-accordion-target="#accordion-body-13" aria-expanded="false" aria-controls="accordion-body-13">
+                  <span class="text-white font-semibold">Position et avantage stratégique</span>
+                  <svg data-accordion-icon class="w-6 h-6 rotate-0 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-body-13" class="hidden" aria-labelledby="accordion-heading-13">
+                <div class="p-4 text-gray-300 border border-gray-700 rounded-b-lg bg-black/40">
+                  La position offre le contrôle du pot et information sur les actions adverses. Jouer plus de mains en
+                  position et ajuster ton aggression.
+                </div>
+              </div>
+            </div>
+            <!-- 14 -->
+            <div class="w-full">
+              <h2 id="accordion-heading-14">
+                <button type="button"
+                  class="flex items-center justify-between w-full p-4 font-medium text-left bg-[rgba(0,0,0,0.6)] p-2 rounded-2xl"
+                  data-accordion-target="#accordion-body-14" aria-expanded="false" aria-controls="accordion-body-14">
+                  <span class="text-white font-semibold">Adjust vs loose-aggressive (LAG) players</span>
+                  <svg data-accordion-icon class="w-6 h-6 rotate-0 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-body-14" class="hidden" aria-labelledby="accordion-heading-14">
+                <div class="p-4 text-gray-300 border border-gray-700 rounded-b-lg bg-black/40">
+                  Contre LAG, utiliser call plus large, trap value, éviter over-bluff et exploiter les tendances trop
+                  agressives.
+                </div>
+              </div>
+            </div>
+            <!-- 15 -->
+            <div class="w-full">
+              <h2 id="accordion-heading-15">
+                <button type="button"
+                  class="flex items-center justify-between w-full p-4 font-medium text-left bg-[rgba(0,0,0,0.6)] p-2 rounded-2xl"
+                  data-accordion-target="#accordion-body-15" aria-expanded="false" aria-controls="accordion-body-15">
+                  <span class="text-white font-semibold">Squeeze plays</span>
+                  <svg data-accordion-icon class="w-6 h-6 rotate-0 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-body-15" class="hidden" aria-labelledby="accordion-heading-15">
+                <div class="p-4 text-gray-300 border border-gray-700 rounded-b-lg bg-black/40">
+                  Squeeze: 3-bet après limp et open. Cible range large du limper et fold equity du raiser initial.
+                  S'assurer
+                  d'avoir stack et position favorables.
+                </div>
+              </div>
+            </div>
+            <!-- 16 -->
+            <div class="w-full">
+              <h2 id="accordion-heading-16">
+                <button type="button"
+                  class="flex items-center justify-between w-full p-4 font-medium text-left bg-[rgba(0,0,0,0.6)] p-2 rounded-2xl"
+                  data-accordion-target="#accordion-body-16" aria-expanded="false" aria-controls="accordion-body-16">
+                  <span class="text-white font-semibold">Check-raise stratégique</span>
+                  <svg data-accordion-icon class="w-6 h-6 rotate-0 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-body-16" class="hidden" aria-labelledby="accordion-heading-16">
+                <div class="p-4 text-gray-300 border border-gray-700 rounded-b-lg bg-black/40">
+                  Check-raise: outil pour extraire value, protéger main, ou représenter une range forte. Choisir spot
+                  selon
+                  tendencies adverses et board texture.
+                </div>
+              </div>
+            </div>
+            <!-- 17 -->
+            <div class="w-full">
+              <h2 id="accordion-heading-17">
+                <button type="button"
+                  class="flex items-center justify-between w-full p-4 font-medium text-left bg-[rgba(0,0,0,0.6)] p-2 rounded-2xl"
+                  data-accordion-target="#accordion-body-17" aria-expanded="false" aria-controls="accordion-body-17">
+                  <span class="text-white font-semibold">Floating postflop</span>
+                  <svg data-accordion-icon class="w-6 h-6 rotate-0 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-body-17" class="hidden" aria-labelledby="accordion-heading-17">
+                <div class="p-4 text-gray-300 border border-gray-700 rounded-b-lg bg-black/40">
+                  Float: call preflop ou flop avec main faible mais plan pour prendre le pot sur turn/river. Utile
+                  contre
+                  adversaires trop agressifs.
+                </div>
+              </div>
+            </div>
+            <!-- 18 -->
+            <div class="w-full">
+              <h2 id="accordion-heading-18">
+                <button type="button"
+                  class="flex items-center justify-between w-full p-4 font-medium text-left bg-[rgba(0,0,0,0.6)] p-2 rounded-2xl"
+                  data-accordion-target="#accordion-body-18" aria-expanded="false" aria-controls="accordion-body-18">
+                  <span class="text-white font-semibold">Overbet / underbet river</span>
+                  <svg data-accordion-icon class="w-6 h-6 rotate-0 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-body-18" class="hidden" aria-labelledby="accordion-heading-18">
+                <div class="p-4 text-gray-300 border border-gray-700 rounded-b-lg bg-black/40">
+                  Ajuster sizing sur river pour maximiser value ou bluffs. Overbet pour polariser, underbet pour induire
+                  calls ou folds selon read.
+                </div>
+              </div>
+            </div>
+            <!-- 19 -->
+            <div class="w-full">
+              <h2 id="accordion-heading-19">
+                <button type="button"
+                  class="flex items-center justify-between w-full p-4 font-medium text-left bg-[rgba(0,0,0,0.6)] p-2 rounded-2xl"
+                  data-accordion-target="#accordion-body-19" aria-expanded="false" aria-controls="accordion-body-19">
+                  <span class="text-white font-semibold">ICM considerations (tournois)</span>
+                  <svg data-accordion-icon class="w-6 h-6 rotate-0 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-body-19" class="hidden" aria-labelledby="accordion-heading-19">
+                <div class="p-4 text-gray-300 border border-gray-700 rounded-b-lg bg-black/40">
+                  ICM: ajuster push/fold et ranges en tournoi selon value des stacks. Importance critique en fin de
+                  tournois
+                  ou bulles.
+                </div>
+              </div>
+            </div>
+            <!-- 20 -->
+            <div class="w-full">
+              <h2 id="accordion-heading-20">
+                <button type="button"
+                  class="flex items-center justify-between w-full p-4 font-medium text-left bg-[rgba(0,0,0,0.6)] p-2 rounded-2xl"
+                  data-accordion-target="#accordion-body-20" aria-expanded="false" aria-controls="accordion-body-20">
+                  <span class="text-white font-semibold">Tilt control & mental game</span>
+                  <svg data-accordion-icon class="w-6 h-6 rotate-0 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div id="accordion-body-20" class="hidden" aria-labelledby="accordion-heading-20">
+                <div class="p-4 text-gray-300 border border-gray-700 rounded-b-lg bg-black/40">
+                  Maintenir focus et discipline pour éviter tilt. La performance mentale influence toutes tes décisions
+                  et
+                  rentabilité à long terme.
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <div class="h-[2px] w-[90%] bg-gradient-to-r from-white/0 via-white/50 to-white/0 my-8 mx-auto"></div>
+
+    <section id="membres"
+      class="scroll-mt-50 grid grid-cols-12 gap-6 md:w-[90%] max-w-6xl mx-[10px] md:mx-auto my-15 text-white px-4">
+
+      <div class="col-span-12 flex flex-col items-center space-y-4 mb-8">
+        <div class="flex items-center justify-center gap-3">
+          <img src="../assets/images/logo/spade.png" alt="Symbole de pique"
+            class="w-8 h-8 md:w-10 md:h-10 drop-shadow-[1px_1px_8px_white]" />
+          <h2
+            class="text-[1.5rem] md:text-[1.8rem] xl:text-[2rem] text-center text-white drop-shadow-[0_0_8px_red] font-bold md:whitespace-nowrap">
+            Zone Réservée — Membres</h2>
+          <img src="../assets/images/logo/club.png" alt="Symbole de trèfle"
+            class="w-8 h-8 md:w-10 md:h-10 drop-shadow-[1px_1px_8px_white]" />
+        </div>
+        <p class="text-gray-200 text-xl max-w-2xl text-center">
+          Cette section contient du contenu réservé aux membres : vidéos d'entraînement, bases de données de mains,
+          solveurs et outils de review. Si tu veux y accéder, connecte-toi ou abonne-toi.
+        </p>
+      </div>
+
+      <div class="col-span-12 md:col-span-8 md:col-start-3 bg-black rounded-2xl p-8 shadow-lg text-center">
+        <h3 class="text-xl font-semibold text-white mb-4">Accès réservé</h3>
+        <p class="text-gray-300 mb-6">Contenu premium — uniquement pour les membres inscrits. Abonnement mensuel ou
+          accès à vie selon l'option.</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="../index.html#Inscription"
+            class="px-6 py-3 bg-red-700 hover:bg-red-800 rounded-lg text-white font-semibold">S'inscrire</a>
+          <a href="#" class="px-6 py-3 border border-red-700 hover:bg-red-800/20 rounded-lg text-white font-semibold">Se
+            connecter</a>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="bg-black">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div class="md:flex md:justify-between">
+        <div class="mb-6 md:mb-0">
+          <a href="index.html" class="flex items-center lg:flex-row flex-col">
+            <img src="../assets/images/logo/poker.png" class="h-25 me-3" alt="Le logo : The SevenDeuce" />
+            <span
+              class="min-w-25 mainLogo__title--cardoFont self-center text-2xl font-semibold whitespace-nowrap text-white">The
+              SevenDeuce Club</span>
+          </a>
+        </div>
+        <div class="flex justify-center sm:grid-cols-3 md:mx-10 sm:space-x-15 space-x-10">
+          <div>
+            <h3 class="min-h-[50px] text-sm font-semibold uppercase text-[#04a199]">Nous joindre</h3>
+            <ul class="text-gray-200 font-medium space-y-2">
+              <li>
+                <a href="mailto:thesevendeuce@hotmail.com" class="hover:text-red-600">Courriel</a>
+              </li>
+              <li>
+                <a href="index.html#Inscription" class="hover:text-red-600">S'inscrire</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="min-h-[50px] text-sm font-semibold uppercase text-[#04a199]">Salles de poker</h3>
+            <ul class="text-gray-200 font-medium space-y-2">
+              <li>
+                <a href="https://www.playground.ca/" class="hover:text-red-600">Playground Poker Club</a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/groups/1440349292932876" class="hover:text-red-600">Le Tapis Vert</a>
+              </li>
+              <li>
+                <a href="https://casinos.lotoquebec.com/fr/montreal/accueil" class="hover:text-red-600">Casino de
+                  Montréal</a>
+              </li>
+              <li>
+                <a href="https://casinos.lotoquebec.com/fr/lacleamy/accueil" class="hover:text-red-600">Casino du
+                  Lac-Leamy</a>
+              </li>
+              <li>
+                <a href="https://salonsdejeux.lotoquebec.com/fr/quebec/accueil" class="hover:text-red-600">Salon de jeux
+                  de Québec</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="min-h-[50px] text-sm font-semibold uppercase text-[#04a199]">Legal</h3>
+            <ul class="text-gray-200 font-medium space-y-2">
+              <li>
+                <a href="#" class="hover:text-red-600">Règles du site</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-600">Gestion des cookies</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-600">Politique de confidentialité</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-red-600">Conditions d'utilisation</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-[1px] bg-gradient-to-r from-[#002422] via-[#037a72] to-[#002422] my-8 mx-auto"></div>
+
+      <div class="flex items-center justify-between max-sm:flex-col">
+        <span class="text-sm text-gray-300 sm:text-center">© 2023 <a href="https://flowbite.com/"
+            class="hover:text-red-600">Flowbite™</a>. All Rights Reserved.</span>
+        <div class="flex mt-4 justify-center sm:mt-0">
+          <a href="https://www.facebook.com/" class="text-gray-300 hover:text-red-600"><i
+              class='bx bxl-facebook text-4xl' style='color:#ffffff'></i></a>
+          <a href="https://discord.com/" class="text-gray-300 hover:text-red-600 ms-5"><i
+              class='bx bxl-discord-alt text-4xl' style='color:#ffffff'></i></a>
+          <a href="https://www.instagram.com" class="text-gray-300 hover:text-red-600 ms-5"><i
+              class='bx bxl-instagram text-4xl' style='color:#ffffff'></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
